@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NC-MutScan Server Benchmark Dashboard</title>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; background: #0f1f3d; color: #fff; padding: 30px; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        h1 { border-bottom: 2px solid #0b6670; padding-bottom: 10px; color: #5eead4; }
+        .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-block: 25px; }
+        .card { background: #14284b; padding: 20px; border-radius: 10px; border: 1px solid #1d3a6b; text-align: center; }
+        .val { font-size: 2rem; font-weight: bold; color: #5eead4; margin-top: 5px; }
+        .lbl { font-size: 0.85rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; }
+        table { width: 100%; border-collapse: collapse; background: #14284b; border-radius: 8px; overflow: hidden; margin-top: 20px; }
+        th, td { padding: 12px 15px; text-align: left; font-size: 0.9rem; border-bottom: 1px solid #1d3a6b; }
+        th { background: #1d3a6b; color: #93c5fd; text-transform: uppercase; font-size: 0.75rem; }
+        .pass { color: #4ade80; font-weight: bold; }
+        .fail { color: #f87171; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NC-MutScan Diagnostic Server Benchmark Report</h1>
+        <div class="grid">
+            <div class="card"><div class="lbl">Accuracy</div><div class="val">96.0%</div></div>
+            <div class="card"><div class="lbl">Sensitivity</div><div class="val">100.0%</div></div>
+            <div class="card"><div class="lbl">Specificity</div><div class="val">92.0%</div></div>
+            <div class="card"><div class="lbl">F1-Score</div><div class="val">0.962</div></div>
+        </div>
+
+        <div class="card" style="text-align:left; margin-bottom:25px;">
+            <h3>Confusion Matrix Summary</h3>
+            <p><strong>True Positives (TP):</strong> 50 | <strong>True Negatives (TN):</strong> 46</p>
+            <p><strong>False Positives (FP):</strong> 4 | <strong>False Negatives (FN):</strong> 0</p>
+            <p><strong>Average Latency:</strong> 657.1 ms</p>
+        </div>
+
+        <h3>Evaluated Test Cases (100 Sample Loci)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Category</th>
+                    <th>Ground Truth</th>
+                    <th>Prediction</th>
+                    <th>Confidence</th>
+                    <th>Status</th>
+                    <th>Genomic Source</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>TEST_001</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_002</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_003</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_004</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_005</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_006</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_007</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_008</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_009</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_010</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_011</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_012</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_013</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_014</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_015</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_016</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_017</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_018</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_019</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_020</td>
+                    <td>Promoter Driver (ETS Gain)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">PCAWG / Horn et al. Science 2013 (chr5:1295228)</td>
+                </tr>
+                <tr>
+                    <td>TEST_021</td>
+                    <td>Enhancer Driver (E-box Insertion)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Mansour et al. Science 2014 (chr1:4720100)</td>
+                </tr>
+                <tr>
+                    <td>TEST_022</td>
+                    <td>Enhancer Driver (E-box Insertion)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Mansour et al. Science 2014 (chr1:4720100)</td>
+                </tr>
+                <tr>
+                    <td>TEST_023</td>
+                    <td>Enhancer Driver (E-box Insertion)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Mansour et al. Science 2014 (chr1:4720100)</td>
+                </tr>
+                <tr>
+                    <td>TEST_024</td>
+                    <td>Enhancer Driver (E-box Insertion)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Mansour et al. Science 2014 (chr1:4720100)</td>
+                </tr>
+                <tr>
+                    <td>TEST_025</td>
+                    <td>Enhancer Driver (E-box Insertion)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Mansour et al. Science 2014 (chr1:4720100)</td>
+                </tr>
+                <tr>
+                    <td>TEST_026</td>
+                    <td>Enhancer Driver (E-box Insertion)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Mansour et al. Science 2014 (chr1:4720100)</td>
+                </tr>
+                <tr>
+                    <td>TEST_027</td>
+                    <td>Enhancer Driver (E-box Insertion)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Mansour et al. Science 2014 (chr1:4720100)</td>
+                </tr>
+                <tr>
+                    <td>TEST_028</td>
+                    <td>Enhancer Driver (E-box Insertion)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Mansour et al. Science 2014 (chr1:4720100)</td>
+                </tr>
+                <tr>
+                    <td>TEST_029</td>
+                    <td>Enhancer Driver (E-box Insertion)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Mansour et al. Science 2014 (chr1:4720100)</td>
+                </tr>
+                <tr>
+                    <td>TEST_030</td>
+                    <td>Enhancer Driver (E-box Insertion)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Mansour et al. Science 2014 (chr1:4720100)</td>
+                </tr>
+                <tr>
+                    <td>TEST_031</td>
+                    <td>Enhancer Driver (E-box Insertion)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Mansour et al. Science 2014 (chr1:4720100)</td>
+                </tr>
+                <tr>
+                    <td>TEST_032</td>
+                    <td>Enhancer Driver (E-box Insertion)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Mansour et al. Science 2014 (chr1:4720100)</td>
+                </tr>
+                <tr>
+                    <td>TEST_033</td>
+                    <td>Enhancer Driver (E-box Insertion)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Mansour et al. Science 2014 (chr1:4720100)</td>
+                </tr>
+                <tr>
+                    <td>TEST_034</td>
+                    <td>Enhancer Driver (E-box Insertion)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Mansour et al. Science 2014 (chr1:4720100)</td>
+                </tr>
+                <tr>
+                    <td>TEST_035</td>
+                    <td>Enhancer Driver (E-box Insertion)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Mansour et al. Science 2014 (chr1:4720100)</td>
+                </tr>
+                <tr>
+                    <td>TEST_036</td>
+                    <td>Promoter Driver (GATA3 Loss)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Rheinbay et al. Nature 2020 (chr10:115511589)</td>
+                </tr>
+                <tr>
+                    <td>TEST_037</td>
+                    <td>Enhancer Driver (PAX5 Motif)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">COSMIC / PCAWG (chr9:37000000)</td>
+                </tr>
+                <tr>
+                    <td>TEST_038</td>
+                    <td>Promoter Driver (GATA3 Loss)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Rheinbay et al. Nature 2020 (chr10:115511589)</td>
+                </tr>
+                <tr>
+                    <td>TEST_039</td>
+                    <td>Enhancer Driver (PAX5 Motif)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">COSMIC / PCAWG (chr9:37000000)</td>
+                </tr>
+                <tr>
+                    <td>TEST_040</td>
+                    <td>Promoter Driver (GATA3 Loss)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Rheinbay et al. Nature 2020 (chr10:115511589)</td>
+                </tr>
+                <tr>
+                    <td>TEST_041</td>
+                    <td>Enhancer Driver (PAX5 Motif)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">COSMIC / PCAWG (chr9:37000000)</td>
+                </tr>
+                <tr>
+                    <td>TEST_042</td>
+                    <td>Promoter Driver (GATA3 Loss)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Rheinbay et al. Nature 2020 (chr10:115511589)</td>
+                </tr>
+                <tr>
+                    <td>TEST_043</td>
+                    <td>Enhancer Driver (PAX5 Motif)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">COSMIC / PCAWG (chr9:37000000)</td>
+                </tr>
+                <tr>
+                    <td>TEST_044</td>
+                    <td>Promoter Driver (GATA3 Loss)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Rheinbay et al. Nature 2020 (chr10:115511589)</td>
+                </tr>
+                <tr>
+                    <td>TEST_045</td>
+                    <td>Enhancer Driver (PAX5 Motif)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">COSMIC / PCAWG (chr9:37000000)</td>
+                </tr>
+                <tr>
+                    <td>TEST_046</td>
+                    <td>Promoter Driver (GATA3 Loss)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Rheinbay et al. Nature 2020 (chr10:115511589)</td>
+                </tr>
+                <tr>
+                    <td>TEST_047</td>
+                    <td>Enhancer Driver (PAX5 Motif)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">COSMIC / PCAWG (chr9:37000000)</td>
+                </tr>
+                <tr>
+                    <td>TEST_048</td>
+                    <td>Promoter Driver (GATA3 Loss)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Rheinbay et al. Nature 2020 (chr10:115511589)</td>
+                </tr>
+                <tr>
+                    <td>TEST_049</td>
+                    <td>Enhancer Driver (PAX5 Motif)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">COSMIC / PCAWG (chr9:37000000)</td>
+                </tr>
+                <tr>
+                    <td>TEST_050</td>
+                    <td>Promoter Driver (GATA3 Loss)</td>
+                    <td>Driver</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">Rheinbay et al. Nature 2020 (chr10:115511589)</td>
+                </tr>
+                <tr>
+                    <td>TEST_051</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_052</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_053</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_054</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_055</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_056</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_057</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_058</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_059</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_060</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_061</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_062</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_063</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_064</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_065</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_066</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_067</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_068</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_069</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_070</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_071</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_072</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_073</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_074</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_075</td>
+                    <td>GC-Rich Benign Promoter</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Core Promoter Reference</td>
+                </tr>
+                <tr>
+                    <td>TEST_076</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_077</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="fail">FAILED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_078</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_079</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_080</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="fail">FAILED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_081</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_082</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_083</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_084</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_085</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_086</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="fail">FAILED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_087</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_088</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_089</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_090</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_091</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_092</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_093</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_094</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Driver</td>
+                    <td>95.0%</td>
+                    <td class="fail">FAILED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_095</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_096</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_097</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_098</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_099</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+                <tr>
+                    <td>TEST_100</td>
+                    <td>Neutral Intronic Control</td>
+                    <td>Benign</td>
+                    <td>Benign</td>
+                    <td>12.0%</td>
+                    <td class="pass">PASSED</td>
+                    <td style="font-size:0.8rem; color:#94a3b8;">UCSC hg38 Intergenic Background (chr2)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

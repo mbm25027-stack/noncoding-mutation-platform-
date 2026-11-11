@@ -1,0 +1,64 @@
+# Python environment & cache
+venv/
+.venv/
+ENV/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Secrets & editor files
+.env
+.vscode/
+
+# Heavy project & dataset directories
+data/
+maf_files/
+report/
+results/
+tmp/
+trained_server_model/
+*_details/
+coding and noncoding region mutatio*/
+pancan_pcawg_2020/
+chl_sccc_2023/
+coad_silu_2022/
+lihc_tcga_pan_can_atlas_2018*/
+clinical.cart.*/
+
+# Data and model file extensions
+*.gtf
+*.tsv
+*.csv
+*.bed
+*.fa
+*.fasta
+*.maf
+*.seg
+*.txt
+!requirements.txt
+*.pkl
+*.joblib
+*.npy
+*.h5
+*.gz
+*.zip
+
+# Installers, binaries, downloaded tools
+*.exe
+*.msi
+*.bb
+*.bw
+
+# PCAWG / ENCODE raw downloads (no file extension)
+pcawg_consensus_*
+pcawg_specimen_*
+encodeCcreCombined*
+
+# Specific genomic filename wildcards
+gdc_*
+October_*
+GRCh38*
+ENCFF*
