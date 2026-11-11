@@ -1,0 +1,4513 @@
+{
+  "metrics": {
+    "total": 500,
+    "accuracy": 0.724,
+    "tp": 86,
+    "tn": 276,
+    "fp": 124,
+    "fn": 14,
+    "avg_latency_ms": 2043.7441020011902
+  },
+  "detailed_results": [
+    {
+      "id": "CAT1_DRIVER_010",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2089.3466472625732,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_009",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": false,
+      "correct": false,
+      "latency_ms": 2089.3466472625732,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_007",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2097.4080562591553,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_001",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2106.8694591522217,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_008",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2098.7308025360107,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_006",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2103.175163269043,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_002",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2104.252576828003,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_005",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2108.661890029907,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_003",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2559.9324703216553,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_004",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": false,
+      "correct": false,
+      "latency_ms": 2558.8550567626953,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_013",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2032.6554775238037,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_014",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2071.0456371307373,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_012",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2082.400321960449,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_011",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2083.207130432129,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_015",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2073.8229751586914,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_018",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2067.5461292266846,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_017",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2067.5461292266846,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_016",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2070.3461170196533,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_019",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2032.8333377838135,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_020",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2032.8333377838135,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_021",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2027.355670928955,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_024",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": false,
+      "correct": false,
+      "latency_ms": 2017.3163414001465,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_026",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2013.6620998382568,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_027",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2013.6620998382568,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_023",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2022.773265838623,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_025",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2024.3828296661377,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_028",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2019.9382305145264,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_029",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": false,
+      "correct": false,
+      "latency_ms": 2031.346321105957,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_030",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2031.346321105957,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_022",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2542.3781871795654,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_031",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2041.8405532836914,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_033",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2019.1481113433838,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_034",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": false,
+      "correct": false,
+      "latency_ms": 2019.1481113433838,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_032",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2019.1481113433838,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_035",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2031.937837600708,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_036",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2031.937837600708,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_037",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2055.567979812622,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_039",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2045.729160308838,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_038",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2045.729160308838,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_040",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2044.9812412261963,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_041",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2024.3189334869385,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_044",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": false,
+      "correct": false,
+      "latency_ms": 2014.5604610443115,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_043",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2020.026445388794,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_042",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2020.026445388794,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_045",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2026.3197422027588,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_046",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2029.963493347168,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_047",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2058.7029457092285,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_048",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2020.169734954834,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_049",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": false,
+      "correct": false,
+      "latency_ms": 2020.169734954834,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_050",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2050.1296520233154,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_053",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2034.076452255249,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_051",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2047.7585792541504,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_054",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": false,
+      "correct": false,
+      "latency_ms": 2042.292594909668,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_052",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2055.4134845733643,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_056",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2036.6106033325195,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_055",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2033.5595607757568,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_057",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2076.2851238250732,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_059",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": false,
+      "correct": false,
+      "latency_ms": 2052.4232387542725,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_058",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2056.994915008545,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_060",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2054.893732070923,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_064",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2034.9652767181396,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_062",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2047.7020740509033,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_061",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2053.0683994293213,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_063",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2047.3198890686035,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_066",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2046.189546585083,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_065",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2051.7759323120117,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_067",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2059.46683883667,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_068",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2024.1141319274902,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_069",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2022.9220390319824,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_070",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2046.600580215454,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_071",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2034.7182750701904,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_074",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": false,
+      "correct": false,
+      "latency_ms": 2026.4861583709717,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_073",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2030.6832790374756,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_072",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2029.6363830566406,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_075",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2031.5873622894287,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_076",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2029.7858715057373,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_077",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2056.1046600341797,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_079",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": false,
+      "correct": false,
+      "latency_ms": 2031.7063331604004,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_078",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2035.085916519165,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_080",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2022.8283405303955,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_084",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2032.611608505249,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_083",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2035.9711647033691,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_081",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2041.9588088989258,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_082",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2041.9588088989258,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_086",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2028.8753509521484,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_085",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2022.111415863037,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_087",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2054.079294204712,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_088",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2018.1519985198975,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_089",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": false,
+      "correct": false,
+      "latency_ms": 2034.116506576538,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_090",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2025.7847309112549,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_091",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2013.5393142700195,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_092",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2014.993667602539,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_093",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2025.068759918213,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_096",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2024.8260498046875,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_095",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2024.8260498046875,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_094",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": false,
+      "correct": false,
+      "latency_ms": 2040.0772094726562,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_097",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2058.215379714966,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_098",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2039.2894744873047,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_099",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": false,
+      "correct": false,
+      "latency_ms": 2024.3346691131592,
+      "status_code": 200
+    },
+    {
+      "id": "CAT1_DRIVER_100",
+      "category": "True Positive Drivers",
+      "expected": true,
+      "predicted": true,
+      "correct": true,
+      "latency_ms": 2024.994134902954,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_001",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2032.9618453979492,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_003",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2024.9838829040527,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_002",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2043.5009002685547,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_004",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2036.0424518585205,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_005",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2037.4553203582764,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_006",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2037.9624366760254,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_007",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2031.5160751342773,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_009",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2025.5472660064697,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_008",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2028.2187461853027,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_010",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2041.3105487823486,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_011",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2026.0910987854004,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_012",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2017.899990081787,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_015",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2020.6637382507324,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_014",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2022.0766067504883,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_016",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2018.6026096343994,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_013",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2039.179801940918,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_017",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2060.2333545684814,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_018",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2024.5420932769775,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_019",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2034.5182418823242,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_020",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2048.8457679748535,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_021",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2030.4009914398193,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_022",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2030.4009914398193,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_023",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2044.3427562713623,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_024",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2044.3427562713623,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_026",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2044.3427562713623,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_025",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2044.3427562713623,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_027",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2047.5192070007324,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_029",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2026.1809825897217,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_028",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2048.0167865753174,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_030",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2046.3991165161133,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_032",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2042.8333282470703,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_031",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2042.8333282470703,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_035",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2025.4764556884766,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_034",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2025.4764556884766,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_036",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2025.4764556884766,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_033",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2025.4764556884766,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_037",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2053.982973098755,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_039",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2021.7630863189697,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_038",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2053.8971424102783,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_040",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2051.571846008301,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_041",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2029.2818546295166,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_042",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2048.2800006866455,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_046",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2021.451473236084,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_045",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2021.451473236084,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_044",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2021.451473236084,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_043",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2047.9114055633545,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_047",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2053.7242889404297,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_048",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2028.0349254608154,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_049",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2035.36057472229,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_050",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2026.486873626709,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_051",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2028.3279418945312,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_052",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2052.3996353149414,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_056",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2023.2915878295898,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_053",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2053.4212589263916,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_055",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2053.4212589263916,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_054",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2054.4519424438477,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_057",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2034.661054611206,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_058",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2040.2560234069824,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_059",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2025.3276824951172,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_060",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2024.449348449707,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_061",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2051.129102706909,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_066",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2024.7037410736084,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_065",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2024.7037410736084,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_064",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2026.841163635254,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_063",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2027.888298034668,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_062",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2029.5000076293945,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_067",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2050.5075454711914,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_068",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2019.2770957946777,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_069",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2059.1304302215576,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_070",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2050.8828163146973,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_071",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2042.008876800537,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_075",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2021.158218383789,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_076",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2020.5681324005127,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_072",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2023.3120918273926,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_073",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2024.7352123260498,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_074",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2024.7352123260498,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_077",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2076.1351585388184,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_078",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2034.0526103973389,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_079",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2029.566764831543,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_080",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2068.8860416412354,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_084",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2027.7910232543945,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_082",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2028.6469459533691,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_085",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2027.8630256652832,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_086",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2041.9857501983643,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_083",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2046.5259552001953,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_081",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2046.0186004638672,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_087",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2043.1838035583496,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_088",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2018.4175968170166,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_089",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2055.912971496582,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_090",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2065.7691955566406,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_091",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2033.3499908447266,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_092",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2033.3499908447266,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_094",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2024.2669582366943,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_093",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2039.8926734924316,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_096",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2023.7596035003662,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_095",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2023.7596035003662,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_097",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2028.6853313446045,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_098",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2021.362543106079,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_099",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2043.8332557678223,
+      "status_code": 200
+    },
+    {
+      "id": "CAT2_GC_TRAP_100",
+      "category": "High GC Decoys",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2061.897039413452,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_002",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2038.499116897583,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_001",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2038.499116897583,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_006",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2032.9980850219727,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_004",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2036.0615253448486,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_003",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2045.9280014038086,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_005",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2042.7448749542236,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_007",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2038.2964611053467,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_008",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2025.6540775299072,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_009",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2058.6676597595215,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_010",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2074.037551879883,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_012",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2031.0068130493164,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_011",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2055.920362472534,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_014",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2050.0693321228027,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_013",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2050.0693321228027,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_015",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2044.9793338775635,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_016",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2053.1976222991943,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_017",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2043.0214405059814,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_018",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2038.4552478790283,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_019",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2029.1881561279297,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_020",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2046.010971069336,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_021",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2021.0671424865723,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_022",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2037.6403331756592,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_025",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2035.417079925537,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_023",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2040.8728122711182,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_024",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2040.8728122711182,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_026",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2030.6751728057861,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_027",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2029.627799987793,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_028",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2050.9023666381836,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_029",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2054.485559463501,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_030",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2072.049140930176,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_031",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2027.684211730957,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_033",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2039.5715236663818,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_035",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2043.7750816345215,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_034",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2043.7750816345215,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_032",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2050.4000186920166,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_036",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2052.647352218628,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_037",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2026.195764541626,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_038",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2054.7618865966797,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_039",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2028.6281108856201,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_040",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2047.6043224334717,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_041",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2032.7599048614502,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_046",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2017.3215866088867,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_044",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2030.0464630126953,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_042",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2049.9813556671143,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_043",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2045.0985431671143,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_045",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2041.7060852050781,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_047",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2048.527240753174,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_048",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2044.6805953979492,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_049",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2049.1695404052734,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_050",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2058.4046840667725,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_051",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2023.1506824493408,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_053",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2036.902904510498,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_052",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2036.902904510498,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_055",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2021.850824356079,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_054",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2021.850824356079,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_056",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2021.850824356079,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_057",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2058.7611198425293,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_058",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2052.2286891937256,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_059",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2025.1431465148926,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_060",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2038.228988647461,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_061",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2044.2547798156738,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_064",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2028.3184051513672,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_062",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2028.3184051513672,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_063",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2028.3184051513672,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_065",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2041.3908958435059,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_066",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2041.3908958435059,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_067",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2051.2125492095947,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_068",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2044.7337627410889,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_069",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2090.2459621429443,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_070",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2041.8505668640137,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_071",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2060.016632080078,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_073",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2026.0298252105713,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_074",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2026.0298252105713,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_072",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2030.0581455230713,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_075",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2031.1882495880127,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_076",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2044.8946952819824,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_077",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2035.7398986816406,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_078",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2058.1088066101074,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_079",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2029.8383235931396,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_080",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2062.007427215576,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_081",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2049.9236583709717,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_082",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2033.8490009307861,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_084",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2035.7747077941895,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_083",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2039.7515296936035,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_085",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2029.4780731201172,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_086",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2041.9275760650635,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_087",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2039.8354530334473,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_088",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2025.874376296997,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_089",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2020.0674533843994,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_090",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2027.8961658477783,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_091",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2049.591541290283,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_095",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2038.384199142456,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_092",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2052.244186401367,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_093",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2049.349546432495,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_094",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2062.3373985290527,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_096",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2048.4671592712402,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_097",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2049.834728240967,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_098",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2088.392496109009,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_099",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2026.6649723052979,
+      "status_code": 200
+    },
+    {
+      "id": "CAT3_NEAR_MATCH_100",
+      "category": "Near-Match Mismatches",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2045.8734035491943,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_004",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2021.0657119750977,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_003",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2026.9253253936768,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_001",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2030.651569366455,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_002",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2027.998924255371,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_006",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2026.5858173370361,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_005",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2042.8006649017334,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_007",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2022.7577686309814,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_008",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2010.9341144561768,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_009",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2027.6103019714355,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_010",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2059.1838359832764,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_013",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2019.726276397705,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_012",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2020.7998752593994,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_011",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2023.6001014709473,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_014",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2019.726276397705,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_015",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2029.7586917877197,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_016",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2026.1914730072021,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_017",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2036.4446640014648,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_018",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2029.3147563934326,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_019",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2055.4592609405518,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_020",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2024.9645709991455,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_021",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2035.5312824249268,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_024",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2035.5312824249268,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_022",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2035.5312824249268,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_023",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2040.234088897705,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_025",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2034.355640411377,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_026",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2050.279378890991,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_027",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2055.6931495666504,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_028",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2030.6081771850586,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_029",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2036.7255210876465,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_030",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2039.799451828003,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_034",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2024.1351127624512,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_033",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2031.0111045837402,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_032",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2031.0111045837402,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_031",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2044.4025993347168,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_035",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2040.827989578247,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_036",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2024.9042510986328,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_037",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2032.9995155334473,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_038",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2048.9959716796875,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_039",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2015.2547359466553,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_040",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2049.945592880249,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_044",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2021.0590362548828,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_041",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2053.4679889678955,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_042",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2051.2948036193848,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_043",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2053.3106327056885,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_045",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2011.6798877716064,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_046",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2011.6798877716064,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_047",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2055.2427768707275,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_048",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2018.9528465270996,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_049",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2044.4839000701904,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_050",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2032.8876972198486,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_052",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2020.9712982177734,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_053",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2020.4646587371826,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_054",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2020.4646587371826,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_051",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2038.4032726287842,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_056",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2021.2996006011963,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_055",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2051.1012077331543,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_057",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2040.093183517456,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_058",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2040.513038635254,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_059",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2040.9619808197021,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_060",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2033.8528156280518,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_061",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2056.5507411956787,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_065",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2045.5188751220703,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_062",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2059.784412384033,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_063",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2062.4425411224365,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_064",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2064.182758331299,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_066",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2020.115613937378,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_067",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2073.058843612671,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_068",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2039.4668579101562,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_069",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2039.9882793426514,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_070",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2009.5081329345703,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_074",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2020.8871364593506,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_072",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2023.545265197754,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_073",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2023.545265197754,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_071",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2026.7789363861084,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_076",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2029.8829078674316,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_075",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2038.3827686309814,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_077",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2019.9103355407715,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_078",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2018.9969539642334,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_079",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2048.973560333252,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_080",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2049.5526790618896,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_083",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2024.2326259613037,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_084",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2026.1645317077637,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_081",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2026.1645317077637,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_082",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2026.1645317077637,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_085",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2047.1744537353516,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_086",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2057.969093322754,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_087",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2057.7232837677,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_088",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2057.7232837677,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_089",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2059.0789318084717,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_090",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2010.002613067627,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_094",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2024.5444774627686,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_091",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2024.5444774627686,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_092",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2024.5444774627686,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_093",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2039.9610996246338,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_095",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2027.961015701294,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_096",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2046.79536819458,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_097",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2035.8226299285889,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_098",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2053.100109100342,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_099",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2027.7585983276367,
+      "status_code": 200
+    },
+    {
+      "id": "CAT4_REPEAT_100",
+      "category": "Low-Complexity Repeats",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2027.1217823028564,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_001",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2024.1999626159668,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_003",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2040.785312652588,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_002",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2045.5002784729004,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_004",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2032.7465534210205,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_005",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2054.393529891968,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_006",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2016.8476104736328,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_007",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2033.8289737701416,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_008",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2048.322916030884,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_009",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2044.3930625915527,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_010",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2064.8977756500244,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_011",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2035.4890823364258,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_014",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2011.5258693695068,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_013",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2014.1887664794922,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_012",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2031.2442779541016,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_016",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2022.1359729766846,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_015",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2025.536060333252,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_017",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2024.8439311981201,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_018",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2044.6701049804688,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_019",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2037.2474193572998,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_020",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2025.7866382598877,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_021",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2032.5491428375244,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_024",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2015.493631362915,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_022",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2032.5491428375244,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_023",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2036.1788272857666,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_025",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2033.506155014038,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_026",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2030.1060676574707,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_027",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2032.9792499542236,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_028",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2062.373161315918,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_029",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2055.6483268737793,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_030",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2026.4606475830078,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_031",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2033.324956893921,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_032",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2056.522846221924,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_033",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2059.696912765503,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_034",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2060.6069564819336,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_036",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2026.5841484069824,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_035",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2026.5841484069824,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_037",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2041.593074798584,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_038",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2050.3110885620117,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_039",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2055.8345317840576,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_040",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2047.4083423614502,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_043",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2030.2484035491943,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_044",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2029.3383598327637,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_041",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2050.784111022949,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_046",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2027.1799564361572,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_045",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2027.1799564361572,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_047",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2020.9605693817139,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_042",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2544.172763824463,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_048",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2041.2168502807617,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_049",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2040.9190654754639,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_050",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2037.5971794128418,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_052",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2056.983232498169,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_051",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2062.0334148406982,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_054",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2056.351900100708,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_053",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2056.351900100708,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_055",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2061.551094055176,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_056",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2036.250114440918,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_057",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2034.9311828613281,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_058",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2038.1851196289062,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_059",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2052.9847145080566,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_060",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2049.499273300171,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_061",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2014.218807220459,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_063",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2030.5113792419434,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_065",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2025.3121852874756,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_062",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2038.5618209838867,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_064",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2030.5113792419434,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_066",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2021.0051536560059,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_067",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2024.5614051818848,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_068",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2010.7429027557373,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_069",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2044.083833694458,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_070",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2055.2220344543457,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_071",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2029.0510654449463,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_074",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2019.1006660461426,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_072",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2024.048089981079,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_073",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2026.0543823242188,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_076",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2090.4388427734375,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_077",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2059.410333633423,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_075",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2529.3264389038086,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_078",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2029.0570259094238,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_079",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2046.0515022277832,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_080",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2051.481008529663,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_081",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2024.7418880462646,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_082",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2040.0292873382568,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_083",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2033.0755710601807,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_084",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2033.0755710601807,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_087",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2042.9120063781738,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_085",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2045.4416275024414,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_086",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2045.4416275024414,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_088",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2037.564754486084,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_089",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2037.4305248260498,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_090",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2061.5031719207764,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_091",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2043.6601638793945,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_094",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2014.9009227752686,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_092",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2020.1530456542969,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_093",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2037.1718406677246,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_096",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2037.1949672698975,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_097",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2037.1949672698975,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_095",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2037.1949672698975,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_098",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": false,
+      "correct": true,
+      "latency_ms": 2043.3154106140137,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_099",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2039.9487018585205,
+      "status_code": 200
+    },
+    {
+      "id": "CAT5_NOISE_100",
+      "category": "Genomic Background Noise",
+      "expected": false,
+      "predicted": true,
+      "correct": false,
+      "latency_ms": 2047.6202964782715,
+      "status_code": 200
+    }
+  ]
+}
