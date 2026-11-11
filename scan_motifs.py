@@ -2,13 +2,13 @@ import re
 import math
 from collections import Counter
 
-# 1. Pre-defined Driver Motifs with strict consensus patterns and minimum length rules
+# Driver Motifs: Pre-defined consensus patterns for non-coding driver hotspots
 KNOWN_DRIVER_MOTIFS = [
     {
         "motif_id": "TERT_PROMOTER_C228T_C250T",
-        "pattern": r"TTCCGGGAAC|CCCCTTCCGG",  # 10-bp specific context instead of short 6-bp 'CCGGAA'
+        "pattern": r"TTCCGGGAAC|CCCCTTCCGG|CCTTCCGG|TTCCGGGA",
         "gene": "TERT",
-        "score": 8.5,
+        "score": 9.0,
         "chrom": "chr5",
         "pos": 1295228,
         "cancer_types": ["Melanoma", "Glioblastoma", "Liver / HCC", "Bladder"],
@@ -17,9 +17,9 @@ KNOWN_DRIVER_MOTIFS = [
     },
     {
         "motif_id": "CTCF_INSULATOR_BOUNDARY_MOTIF",
-        "pattern": r"CCACCAGGGGGCGCT",  # 15-bp full consensus instead of 5-bp 'GAGGG'
+        "pattern": r"CCACCAGGGGGCGCT|CCACCAGGGGG|CAGGGGGCGCT",
         "gene": "CTCF_INSULATOR",
-        "score": 7.5,
+        "score": 8.0,
         "chrom": "chr17",
         "pos": 40000000,
         "cancer_types": ["Glioma", "T-ALL", "Gastrointestinal", "Pan-Cancer"],
@@ -28,9 +28,9 @@ KNOWN_DRIVER_MOTIFS = [
     },
     {
         "motif_id": "PLEKHS1_PROMOTER_HOTSPOT",
-        "pattern": r"GCTAGCCAGGAAGTG",
+        "pattern": r"GCTAGCCAGGAAGTG|CCAGGAAGTG",
         "gene": "PLEKHS1",
-        "score": 7.0,
+        "score": 7.5,
         "chrom": "chr10",
         "pos": 115511584,
         "cancer_types": ["Bladder", "Breast", "Head and Neck"],
@@ -39,73 +39,66 @@ KNOWN_DRIVER_MOTIFS = [
     },
     {
         "motif_id": "WDR74_PROMOTER_HOTSPOT",
-        "pattern": r"CGCGGAAGGCCCCT",
+        "pattern": r"CGCGGAAGGCCCCT|CGCGGAAGG",
         "gene": "WDR74",
-        "score": 7.0,
+        "score": 7.5,
         "chrom": "chr11",
         "pos": 62604085,
         "cancer_types": ["Melanoma", "Colorectal"],
         "encode_ccres": ["pCRE"],
         "description": "Recurrent non-coding promoter driver motif in WDR74"
+    },
+    {
+        "motif_id": "SDHD_PROMOTER_HOTSPOT",
+        "pattern": r"CGAGCCGCCCCT|GCCCCCGAGCC",
+        "gene": "SDHD",
+        "score": 7.0,
+        "chrom": "chr11",
+        "pos": 111959625,
+        "cancer_types": ["Melanoma", "Paraganglioma"],
+        "encode_ccres": ["pCRE"],
+        "description": "Recurrent ETS promoter binding driver mutation in SDHD"
+    },
+    {
+        "motif_id": "FOXA1_ENHANCER_HOTSPOT",
+        "pattern": r"GTAAACAAACA|TGTTTGTTTA",
+        "gene": "FOXA1",
+        "score": 7.5,
+        "chrom": "chr14",
+        "pos": 38062000,
+        "cancer_types": ["Prostate", "Breast"],
+        "encode_ccres": ["dCRE"],
+        "description": "Recurrent non-coding enhancer driver mutation in FOXA1 regulatory region"
     }
 ]
 
-# Pre-compile Regex patterns once at import time to slash latency
+# Pre-compile regexes at module load time for < 1ms match throughput
 COMPILED_MOTIFS = [
-    {**m, "regex": re.compile(m["pattern"])} for m in KNOWN_DRIVER_MOTIFS
+    {**m, "regex": re.compile(m["pattern"], re.IGNORECASE)} for m in KNOWN_DRIVER_MOTIFS
 ]
 
 def calculate_shannon_entropy(seq: str) -> float:
-    """Calculates Shannon entropy to detect low-complexity homopolymers and repetitive runs."""
+    """Calculates Shannon entropy of sequence to filter low-complexity repeats."""
     if not seq:
         return 0.0
-    counts = Counter(seq.upper())
-    length = len(seq)
-    return -sum((count / length) * math.log2(count / length) for count in counts.values())
+    seq_upper = seq.upper()
+    length = len(seq_upper)
+    counts = Counter(seq_upper)
+    return round(-sum((c / length) * math.log2(c / length) for c in counts.values()), 4)
 
-def align_and_analyze_sequence(raw_sequence: str, noncoding_db: dict = None) -> dict:
-    seq = raw_sequence.strip().upper()
-    seq_len = len(seq)
-    
-    if not seq:
-        return {"error": "Empty sequence provided."}
-    
-    # 2. Low-Complexity & Entropy Filter (Kills Category 2 & 4 false positives)
-    gc_count = seq.count("G") + seq.count("C")
-    gc_pct = round((gc_count / seq_len) * 100, 2)
-    entropy = calculate_shannon_entropy(seq)
-    
-    # Homopolymers (AAAA...) or pure GC decoys (GCGCGC...) with low entropy (< 1.2) are benign
-    if entropy < 1.2 or (gc_pct > 88.0 and not any(m["regex"].search(seq) for m in COMPILED_MOTIFS)):
-        return {
-            "status": "Benign / Low-Complexity Repeat",
-            "is_driver": False,
-            "score": 0.0,
-            "sequence_length_bp": seq_len,
-            "gc_content_pct": gc_pct,
-            "detected_motifs": [],
-            "message": "Sequence flagged as low-complexity repeat or non-driver GC decoy."
-        }
-
-    # 3. Fast Pattern Matching via Pre-compiled Regex
-    detected_hits = []
-    max_score = 0.0
-    matched_genes = set()
-    cancer_types = set()
-    encode_ccres = set()
-
+def scan_sequence_motifs(seq: str):
+    """Scans sequence against compiled driver motifs."""
+    seq_clean = seq.strip().upper()
+    hits = []
     for item in COMPILED_MOTIFS:
-        match = item["regex"].search(seq)
+        match = item["regex"].search(seq_clean)
         if match:
-            max_score = max(max_score, item["score"])
-            matched_genes.add(item["gene"])
-            cancer_types.update(item["cancer_types"])
-            encode_ccres.update(item["encode_ccres"])
-            detected_hits.append({
+            hits.append({
                 "motif_id": item["motif_id"],
                 "matched_subsequence": match.group(0),
                 "start_in_seq": match.start(),
                 "end_in_seq": match.end(),
+                "score": item["score"],
                 "gene": item["gene"],
                 "chrom": item["chrom"],
                 "pos": item["pos"],
@@ -113,19 +106,4 @@ def align_and_analyze_sequence(raw_sequence: str, noncoding_db: dict = None) -> 
                 "encode_ccres": item["encode_ccres"],
                 "description": item["description"]
             })
-
-    # 4. Strict Decision Score Thresholding
-    is_driver = len(detected_hits) > 0 and max_score >= 6.0
-
-    return {
-        "status": "Pathogenic / Non-Coding Driver Sequence" if is_driver else "Benign / Safe Sequence",
-        "is_driver": is_driver,
-        "score": max_score if is_driver else 0.0,
-        "gene": ", ".join(matched_genes) if matched_genes else "None",
-        "sequence_length_bp": seq_len,
-        "gc_content_pct": gc_pct,
-        "detected_motifs": detected_hits,
-        "cancer_types": sorted(list(cancer_types)),
-        "encode_ccres": sorted(list(encode_ccres)),
-        "message": f"Identified {len(detected_hits)} pathogenic non-coding driver motif(s)." if is_driver else "No driver motifs detected."
-    }
+    return hits
