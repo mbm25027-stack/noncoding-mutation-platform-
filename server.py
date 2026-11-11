@@ -4,28 +4,23 @@ import os
 import sys
 from urllib.parse import urlparse
 
-# Import sequence engine with graceful fallback
+# 1. Sequence Alignment Engine Import (Graceful Fallback)
 align_and_analyze_sequence = None
 try:
     from sequence_aligner_engine import align_and_analyze_sequence
-except ImportError:
-    try:
-        import importlib
-        seq_mod = importlib.import_module("sequence_aligner_engine")
-        align_and_analyze_sequence = seq_mod.align_and_analyze_sequence
-    except Exception as e:
-        print(f"[!] Warning: sequence_aligner_engine could not be loaded: {e}", flush=True)
+except Exception as e:
+    print(f"[!] Warning: sequence_aligner_engine could not be loaded: {e}", flush=True)
 
-# Import Epigenomics engine
+# 2. Epigenomics Engine Import
 try:
     import epigenomics_engine
-except ImportError:
+except Exception as e:
     epigenomics_engine = None
 
-# Import Structural Variant engine
+# 3. Structural Variant Engine Import
 try:
     import sv_engine
-except ImportError:
+except Exception as e:
     sv_engine = None
 
 PORT = int(os.environ.get("PORT", 8000))
@@ -57,7 +52,7 @@ def analyze_mutation(chrom, pos, gene=None):
     except (ValueError, TypeError):
         return {"error": "Invalid genomic position integer."}
 
-    # Fetch epigenomic context (open chromatin / cCRE / CTCF)
+    # Query epigenomic context (open chromatin / cCRE / CTCF)
     epi_context = None
     if epigenomics_engine and hasattr(epigenomics_engine, "query_locus_context"):
         try:
@@ -155,7 +150,7 @@ class NCDriverRequestHandler(http.server.SimpleHTTPRequestHandler):
         parsed_url = urlparse(self.path)
         path = parsed_url.path
 
-        # 1. Structural Variant API Route
+        # 1. Structural Variant API Endpoint
         if path in ["/api/analyze_sv", "/analyze_sv"]:
             try:
                 content_length = int(self.headers.get("Content-Length", 0))
@@ -196,7 +191,7 @@ class NCDriverRequestHandler(http.server.SimpleHTTPRequestHandler):
                 self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
             return
 
-        # 2. Standard SNV / Sequence API Route
+        # 2. Standard SNV / Sequence Analysis Endpoint
         if path in ["/", "/api/analyze", "/analyze"]:
             try:
                 content_length = int(self.headers.get("Content-Length", 0))
@@ -211,7 +206,7 @@ class NCDriverRequestHandler(http.server.SimpleHTTPRequestHandler):
 
                 raw_sequence = payload.get("sequence", "").strip()
 
-                # Dual Mode A: Sequence analysis
+                # Mode A: Sequence analysis
                 if raw_sequence:
                     if callable(align_and_analyze_sequence):
                         result = align_and_analyze_sequence(raw_sequence, NONCODING_DB)
@@ -222,7 +217,7 @@ class NCDriverRequestHandler(http.server.SimpleHTTPRequestHandler):
                     self.wfile.write(json.dumps(result, indent=2).encode("utf-8"))
                     return
 
-                # Dual Mode B: Coordinate analysis
+                # Mode B: Coordinate analysis
                 chrom = payload.get("chrom", "")
                 pos = payload.get("pos", 0)
                 gene = payload.get("gene", "")
