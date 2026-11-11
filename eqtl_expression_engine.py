@@ -1,12 +1,10 @@
 """
-eqtl_expression_engine.py
 Dynamic eQTL Transcript Expression Linkage Engine.
 Correlates noncoding locus genotypes with target gene RNA expression (TPM).
 """
 
 import math
 from typing import List, Dict, Any
-import pandas as pd
 
 def calculate_eqtl_expression(
     target_gene: str,
