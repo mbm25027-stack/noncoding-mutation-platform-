@@ -62,3 +62,10 @@ gdc_*
 October_*
 GRCh38*
 ENCFF*
+# Ignore raw multi-hundred-MB ClinVar dumps
+clinvar.vcf
+*.vcf.gz
+
+
+files (1)/
+
