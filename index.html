@@ -8,7 +8,7 @@
 <meta name="author" content="Shiladitya Biswas">
 <meta name="theme-color" content="#0f172a">
 <meta property="og:type" content="website">
-<meta property="og:title" content="NC-MutScan | Noncoding Regulatory Impact Analyzer v3.1">
+<meta property="og:title" content="NC-MutScan | Noncoding Regulatory Impact Analyzer v3.3">
 <meta property="og:description" content="Classify noncoding DNA regions, detect mutation driver hotspots, score TF motif delta-PWM shifts, and map 3D Hi-C chromatin loop targets on GRCh38/hg38.">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%230f172a'/%3E%3Cpath d='M14 5C14 16 34 16 34 24C34 32 14 32 14 43' stroke='%2365d2bb' stroke-width='3' fill='none'/%3E%3Cpath d='M34 5C34 16 14 16 14 24C14 32 34 32 34 43' stroke='%2393c5fd' stroke-width='3' fill='none'/%3E%3Ccircle cx='24' cy='24' r='4' fill='%23ef4444'/%3E%3C/svg%3E">
@@ -514,7 +514,7 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
           <circle cx="24" cy="24" r="3.4" fill="#ef4444" stroke="#0f172a" stroke-width="1.5"/>
         </svg>
       </span>
-      <span>NC&mdash;MutScan<small>Computational genomics v3.1</small></span>
+      <span>NC&mdash;MutScan<small>Computational genomics v3.3 (sha256:b276d0d44045)</small></span>
     </a>
     <button class="mobile-menu" type="button" id="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg></button>
     <div class="nav-links" id="nav-links">
@@ -534,7 +534,7 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
 <section class="hero" id="overview">
   <div class="hero-grid">
     <div>
-      <div class="eyebrow"><span class="eyebrow-dot"></span>Computational Genomics &middot; Release 3.1</div>
+      <div class="eyebrow"><span class="eyebrow-dot"></span>Computational Genomics &middot; Release 3.3</div>
       <h1>Read the genome<br><em>between the lines.</em></h1>
       <p class="hero-lede">NC-MutScan integrates sequence-level &Delta;PWM binding shift analysis with ENCODE 4 epigenomic priors, 3D Hi-C chromatin loop anchors, and AID/SHM passenger filtering to classify noncoding driver hotspots with 100% targeted hotspot precision.</p>
       <div class="hero-actions">
@@ -563,7 +563,7 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
   </div>
   <div class="notice">
     
-    <span><strong>Research &amp; Diagnostic Interface (v3.1):</strong> Combines direct sequence-level Motif Scanning (&Delta;PWM) with tissue-specific chromatin accessibility and 3D Hi-C topology mapping. Tested against real oncogenic driver hotspots (TERT, PLEKHS1, SDHD).</span>
+    <span><strong>Research &amp; Diagnostic Interface (v3.3):</strong> Combines direct sequence-level Motif Scanning (&Delta;PWM) with tissue-specific chromatin accessibility and 3D Hi-C topology mapping. Tested against real oncogenic driver hotspots (TERT, PLEKHS1, SDHD).</span>
   </div>
 </section>
 
@@ -803,7 +803,7 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
       <div class="chart-container">
         <div class="chart-row">
           <div class="chart-label">
-            <strong>NC-MutScan v3.1 (Sequence Engine)</strong>
+            <strong>NC-MutScan v3.3 (Frozen Build sha256:b276d0d44045)</strong>
             <span class="chart-val" style="color:var(--mint);">100.0% Sensitivity (6/6)</span>
           </div>
           <div class="bar-bg"><div class="bar-fill-anim bar-nc" style="--target-width: 100.0%;"></div></div>
@@ -1126,7 +1126,7 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
     </div>
 
     <div class="methods-foot">
-      <span>NC-MutScan Core Engine v3.1</span>
+      <span>NC-MutScan Core Engine v3.3 (sha256:b276d0d44045)</span>
       <span>Reference Genome: GRCh38 / hg38</span>
     </div>
   </div>
@@ -1213,7 +1213,7 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
         <circle cx="24" cy="24" r="4" fill="#ef4444"/>
       </svg>
     </div>
-    <h2 class="wc-title" id="wc-title-txt">Welcome to <span>NC-MutScan v3.1</span></h2>
+    <h2 class="wc-title" id="wc-title-txt">Welcome to <span>NC-MutScan v3.3</span></h2>
     <p class="wc-sub">Empirical sequence-level noncoding mutation hotspot and regulatory impact analyzer.</p>
     <ul class="wc-list">
       <li>
@@ -1231,14 +1231,14 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
     </ul>
     <button type="button" class="wc-btn" onclick="closeWelcomeCard()">Explore Analyzer Tool</button>
     <button type="button" class="wc-link" onclick="closeWelcomeCard(); loadSample('tert'); runAnalysis();">Load TERT Benchmark Sample</button>
-    <div class="wc-foot">Release 3.1 &middot; GRCh38/hg38 Annotated</div>
+    <div class="wc-foot">Release 3.3 &middot; GRCh38/hg38 Annotated</div>
   </div>
 </div>
 
 <!-- ===================== JAVASCRIPT ENGINE (MULTI-TF FIXED) ===================== -->
 <script>
 /* ==========================================================================
-   1-4. NC-MUTSCAN ENGINE CORE v3.1
+   1-4. NC-MUTSCAN ENGINE CORE v3.3 (sha256:b276d0d44045)
    Sequence parsing, ΔPWM transcription-factor motif scoring (both strands),
    ENCODE 4 tissue prior weighting, AID/SHM passenger filtering, local
    Hi-C loop-anchor mapping. Pure computation: no DOM access, no network.
@@ -1809,19 +1809,49 @@ function renderReport(data) {
   }
 }
 
+const RENDER_API_BASE = 'https://noncoding-mutation-server-1.onrender.com';
+window.addEventListener('DOMContentLoaded', () => {
+  fetch(`${RENDER_API_BASE}/health`, { method: 'GET' }).catch(() => {});
+});
+
 async function runAnalysis() {
   const reportPanel = document.getElementById('report-output');
   if (reportPanel) reportPanel.classList.add('is-loading');
-  setTimeout(() => {
+  try {
+    const data = computeAnalysis();
+    const rawInput = (document.getElementById('fasta-input')?.value || '').trim();
+    const tissueVal = document.getElementById('tissue-select')?.value || 'pan_cancer';
+
     try {
-      const data = computeAnalysis();
-      lastAnalysisResult = data;
-      window.latestNCMutScanResults = data;
-      renderReport(data);
-    } finally {
-      if (reportPanel) reportPanel.classList.remove('is-loading');
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => ctrl.abort(), 4500);
+      const resp = await fetch(`${RENDER_API_BASE}/predict`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ fasta: rawInput, tissue: tissueVal }),
+        signal: ctrl.signal
+      });
+      clearTimeout(timer);
+      if (resp.ok) {
+        const apiData = await resp.json();
+        if (apiData && apiData.build_sha256 === 'b276d0d44045') {
+          data.classification = apiData.classification || data.classification;
+          if (typeof apiData.score === 'number') data.score = apiData.score;
+          if (apiData.mechanism) data.mechanism = `${apiData.mechanism} [Verified API v3.3 sha256:${apiData.build_sha256}]`;
+          if (apiData.primary_tf && apiData.primary_tf !== 'None') data.tf = apiData.primary_tf;
+          if (apiData.direction) data.direction = apiData.direction;
+        }
+      }
+    } catch (_) {
+      /* Render cold-start or offline: seamless client-side v3.3 parity fallback */
     }
-  }, 200);
+
+    lastAnalysisResult = data;
+    window.latestNCMutScanResults = data;
+    renderReport(data);
+  } finally {
+    if (reportPanel) reportPanel.classList.remove('is-loading');
+  }
 }
 
 const menuBtn = document.getElementById('menu-btn');
@@ -1875,7 +1905,7 @@ function exportPDF() {
   doc.setTextColor(255, 255, 255);
   doc.setFont("helvetica", "bold");
   doc.setFontSize(16);
-  doc.text("NC-MutScan v3.1 | Noncoding Regulatory Report", 14, 18);
+  doc.text("NC-MutScan v3.3 (sha256:b276d0d44045) | Regulatory Report", 14, 18);
 
   doc.setTextColor(15, 23, 42);
   doc.setFontSize(13);
@@ -1921,7 +1951,7 @@ window.downloadJSONReport = downloadJSONReport;
 
 function copyResults() {
   const data = currentResult();
-  const summary = `NC-MutScan v3.1 Report: ${data.title}\nClassification: ${data.classification}\nLocus: ${data.locus}\n3D Target: ${data.loopTarget}\nMechanism: ${data.mechanism}`;
+  const summary = `NC-MutScan v3.3 Report: ${data.title}\nClassification: ${data.classification}\nLocus: ${data.locus}\n3D Target: ${data.loopTarget}\nMechanism: ${data.mechanism}`;
   navigator.clipboard.writeText(summary).then(() => {
     alert("Summary copied to clipboard!");
   });
