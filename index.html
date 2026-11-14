@@ -1834,7 +1834,7 @@ async function runAnalysis() {
       clearTimeout(timer);
       if (resp.ok) {
         const apiData = await resp.json();
-        if (apiData && apiData.build_sha256 === 'b276d0d44045') {
+        if (apiData && ['b276d0d44045', 'd88df7ffee48'].includes(apiData.build_sha256)) {
           data.classification = apiData.classification || data.classification;
           if (typeof apiData.score === 'number') data.score = apiData.score;
           if (apiData.mechanism) data.mechanism = `${apiData.mechanism} [Verified API v3.3 sha256:${apiData.build_sha256}]`;
