@@ -616,15 +616,20 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
 .fb-links a, .fb-links button { background: none; border: 0; padding: 0; cursor: pointer; font: 600 12.5px var(--mono); color: #65d2bb; text-decoration: underline; text-underline-offset: 4px; }
 @media (max-width: 850px) { .fb-wrap { grid-template-columns: 1fr; } .fb-rate { gap: 5px; } .fb-num span { font-size: 13px; border-radius: 8px; } }
 @media (prefers-reduced-motion: reduce) { .fb-track, .fb-slide, .fb-bar i, .fb-reveal { transition: none; } .fb-slide { transform: none; } .fb-reveal { opacity: 1; transform: none; } .fb-slide.active .fb-check circle, .fb-slide.active .fb-check path { animation: none; stroke-dashoffset: 0; } }
-.fb-google-row { margin-top: 16px; display: flex; flex-direction: column; gap: 10px; }
+
+/* ===== Google sign-in inside feedback Q1 (additive) ===== */
+.fb-google-row { display: none; margin-top: 18px; flex-direction: column; gap: 12px; }
+.fb-google-row.ready { display: flex; }
 .fb-or { display: flex; align-items: center; gap: 10px; font: 500 10.5px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: #7f93a8; }
 .fb-or::before, .fb-or::after { content: ""; flex: 1; height: 1px; background: rgba(255,255,255,.14); }
-.fb-g-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 11px 16px; border-radius: 8px; border: 1px solid rgba(255,255,255,.22); background: #ffffff; color: #0f172a; font: 600 14px var(--sans); cursor: pointer; transition: transform .2s, box-shadow .2s; }
-.fb-g-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(0,0,0,.25); }
+.fb-g-slot { min-height: 44px; display: flex; }
+.fb-g-slot > div { max-width: 100%; }
+.fb-g-note { font: 400 11.5px/1.5 var(--sans); color: #8da2b8; margin: 0; }
 .fb-g-pill { display: none; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 14px; border-radius: 8px; background: rgba(101,210,187,.12); border: 1px solid rgba(101,210,187,.4); color: #e6ecf8; font: 500 13px var(--sans); }
-.fb-g-pill.on { display: flex; }
+.fb-g-pill.on { display: flex; animation: fbGIn .45s cubic-bezier(.2,.9,.3,1.2); }
+@keyframes fbGIn { from { opacity: 0; transform: translateY(8px) scale(.96); } to { opacity: 1; transform: none; } }
 .fb-g-info { display: flex; align-items: center; gap: 10px; min-width: 0; }
-.fb-g-info img { width: 28px; height: 28px; border-radius: 50%; border: 1px solid #65d2bb; }
+.fb-g-info img { width: 28px; height: 28px; border-radius: 50%; border: 1px solid #65d2bb; flex-shrink: 0; }
 .fb-g-info span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .fb-g-out { background: none; border: 0; color: #65d2bb; font: 600 11.5px var(--mono); cursor: pointer; text-decoration: underline; flex-shrink: 0; }
 </style>
@@ -651,6 +656,7 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
       <a href="#evidence">Evidence</a>
       <a href="#methods">Methods</a>
       <a href="#about" class="nav-cta">Contact </a>
+      <button type="button" id="nav-auth-btn" onclick="openAuthModal()" hidden style="margin-left:14px;padding:7px 16px;border-radius:6px;border:1px solid #111;background:#111;color:#fff;font-weight:600;cursor:pointer;max-width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Sign In</button>
     </div>
   </nav>
 </header>
@@ -1347,21 +1353,14 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
             <div class="fb-q">Question 1</div>
             <h3><label for="fb-name">What&rsquo;s your name?</label></h3>
             <input class="fb-input" id="fb-name" type="text" autocomplete="name" maxlength="80" placeholder="Your full name">
-            <div class="fb-google-row">
-              <div class="fb-or">or sign in with Google</div>
-              <div id="fb-google-btn-slot">
-                <button type="button" class="fb-g-btn" id="fb-google-fallback">
-                  <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
-                  Continue with Google
-                </button>
-              </div>
+            <div class="fb-google-row" id="fb-google-row">
+              <div class="fb-or" id="fb-or">or sign in with Google</div>
+              <div class="fb-g-slot" id="fb-google-btn-slot"></div>
               <div class="fb-g-pill" id="fb-google-user">
-                <div class="fb-g-info">
-                  <img id="fb-g-avatar" src="" alt="">
-                  <span id="fb-g-label"></span>
-                </div>
+                <div class="fb-g-info"><img id="fb-g-avatar" src="" alt="" referrerpolicy="no-referrer"><span id="fb-g-label"></span></div>
                 <button type="button" class="fb-g-out" id="fb-g-out">Sign out</button>
               </div>
+              <p class="fb-g-note">Signing in fills your name and includes your Google email with your feedback.</p>
             </div>
           </div>
 
@@ -1395,10 +1394,11 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
           <div class="fb-slide fb-done" data-step="4">
             <svg class="fb-check" viewBox="0 0 84 84" aria-hidden="true"><circle cx="42" cy="42" r="30"/><path d="M29 43l9 9 18-20"/></svg>
             <h3>Thank you<span id="fb-thanks-name"></span>!</h3>
-            <p id="fb-status-msg">Your feedback has been sent to <strong>shiladityabiswas22@gmail.com</strong>.</p>
-            <div class="fb-links"><a id="fb-mail" href="#">Open in email client</a><button type="button" id="fb-again">Send another</button></div>
+            <p id="fb-status">Your feedback has been received. It genuinely helps.</p>
+            <div class="fb-links"><a id="fb-mail" href="#">Also email it to the author</a><button type="button" id="fb-again">Send another</button></div>
           </div>
-</div>
+
+        </div>
         <div class="fb-err" id="fb-err" role="alert" style="padding:0 clamp(20px,3vw,34px);margin:0"></div>
         <div class="fb-nav" id="fb-nav">
           <button type="button" class="fb-btn fb-back" id="fb-back" disabled>&larr; Back</button>
@@ -3037,18 +3037,84 @@ if (benchSec) compObserver.observe(benchSec);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && lb.classList.contains('open')) close(); });
 })();
 </script>
+<div id="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:9999;align-items:center;justify-content:center;">
+  <div style="background:#fff;padding:32px;border-radius:12px;max-width:380px;width:90%;text-align:center;position:relative;box-shadow:0 20px 40px rgba(0,0,0,0.2);">
+    <button type="button" onclick="closeAuthModal()" aria-label="Close" style="position:absolute;top:12px;right:14px;border:none;background:none;font-size:22px;cursor:pointer;">&times;</button>
+    <h3 id="auth-title" style="margin:0 0 8px;font-size:22px;">Sign in to NC&mdash;MutScan</h3>
+    <div id="modal-signed-out">
+      <p style="margin:0 0 20px;color:#555;font-size:14px;">Use your Google account to sign in or create an account.</p>
+      <div id="modal-google-btn" style="display:flex;justify-content:center;"></div>
+    </div>
+    <div id="modal-signed-in" style="display:none;">
+      <p id="modal-user-line" style="margin:0 0 20px;color:#555;font-size:14px;word-break:break-word;"></p>
+      <button type="button" id="modal-signout" style="padding:9px 20px;border-radius:6px;border:1px solid #111;background:#fff;color:#111;font-weight:600;cursor:pointer;">Sign out</button>
+    </div>
+  </div>
+</div>
+
 <script>
-/* Feedback card-slider + Gmail delivery + Google Sign-In */
+/* Shared Google sign-in (navbar + feedback form). Standalone; independent of the analysis engine. */
+var NCAuth = (function () {
+  /* Paste your real Google Cloud OAuth 2.0 *Web* Client ID here. While it still contains "YOUR_",
+     Google sign-in stays hidden so visitors never see a button that cannot work. */
+  var GOOGLE_CLIENT_ID = 'YOUR_REAL_CLIENT_ID_HERE.apps.googleusercontent.com';
+  var configured = !!GOOGLE_CLIENT_ID && GOOGLE_CLIENT_ID.indexOf('YOUR_') === -1;
+  var profile = null, ready = false, listeners = [], readyCbs = [];
+  function emit() { listeners.forEach(function (f) { try { f(profile); } catch (e) {} }); }
+  function decodeJwt(token) {
+    var b = token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+    return JSON.parse(decodeURIComponent(atob(b).split('').map(function (c) { return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2); }).join('')));
+  }
+  function paintNav() {
+    var navBtn = document.getElementById('nav-auth-btn'); if (!navBtn) return;
+    if (configured && ready) navBtn.hidden = false;
+    navBtn.textContent = profile ? (profile.name || profile.email) : 'Sign In';
+    navBtn.title = profile ? profile.email : '';
+  }
+  function tryInit() {
+    if (!configured) return true;
+    if (!(window.google && google.accounts && google.accounts.id)) return false;
+    google.accounts.id.initialize({ client_id: GOOGLE_CLIENT_ID, callback: function (res) {
+      try { var p = decodeJwt(res.credential); profile = { name: p.name || '', email: p.email || '', picture: p.picture || '' }; }
+      catch (e) { return; }
+      paintNav(); emit(); closeAuthModal();
+    } });
+    ready = true; paintNav(); readyCbs.forEach(function (f) { f(); }); readyCbs = [];
+    return true;
+  }
+  (function wait(n) { if (!tryInit() && n < 40) setTimeout(function () { wait(n + 1); }, 250); })(0);
+  return {
+    configured: configured,
+    profile: function () { return profile; },
+    onChange: function (f) { listeners.push(f); },
+    whenReady: function (f) { if (ready) f(); else readyCbs.push(f); },
+    renderButton: function (el, opts) { if (ready) { el.innerHTML = ''; google.accounts.id.renderButton(el, opts); } },
+    signOut: function () { profile = null; if (window.google && google.accounts && google.accounts.id) google.accounts.id.disableAutoSelect(); paintNav(); emit(); }
+  };
+})();
+function openAuthModal() {
+  var m = document.getElementById('auth-modal'), p = NCAuth.profile();
+  document.getElementById('modal-signed-out').style.display = p ? 'none' : '';
+  document.getElementById('modal-signed-in').style.display = p ? '' : 'none';
+  if (p) document.getElementById('modal-user-line').textContent = 'Signed in as ' + (p.name ? p.name + ' \u00b7 ' : '') + p.email;
+  else NCAuth.renderButton(document.getElementById('modal-google-btn'), { theme: 'outline', size: 'large', width: 300, text: 'continue_with' });
+  m.style.display = 'flex';
+}
+function closeAuthModal() { document.getElementById('auth-modal').style.display = 'none'; }
+document.getElementById('modal-signout').addEventListener('click', function () { NCAuth.signOut(); closeAuthModal(); });
+document.getElementById('auth-modal').addEventListener('click', function (e) { if (e.target === this) closeAuthModal(); });
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAuthModal(); });
+</script>
+<script>
+/* Feedback card-slider (standalone; independent of the analysis engine) */
 (function () {
+  /* Responses are emailed to OWNER_EMAIL through FormSubmit (https://formsubmit.co). */
   var OWNER_EMAIL = 'shiladityabiswas22@gmail.com';
   var FEEDBACK_ENDPOINT = 'https://formsubmit.co/ajax/' + OWNER_EMAIL;
-  var GOOGLE_CLIENT_ID = 'YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com';
-
+  var googleProfile = null;   /* sign-in itself lives in the shared NCAuth module above */
   var $ = function (id) { return document.getElementById(id); };
   var track = $('fb-track'); if (!track) return;
   var slides = track.querySelectorAll('.fb-slide'), step = 0, TOTAL = 4;
-  var googleProfile = null;
-
   var words = ['', 'Very poor', 'Poor', 'Below average', 'Fair', 'Okay', 'Good', 'Very good', 'Great', 'Excellent', 'Outstanding'];
   var rate = $('fb-rate'), h = '';
   for (var i = 1; i <= 10; i++) h += '<label class="fb-num"><input type="radio" name="fb-sat" value="' + i + '" aria-label="' + i + ' out of 10"><span>' + i + '</span></label>';
@@ -3056,63 +3122,32 @@ if (benchSec) compObserver.observe(benchSec);
   rate.addEventListener('change', function (e) { $('fb-word').textContent = words[+e.target.value] || ''; $('fb-err').textContent = ''; });
   document.getElementById('fb-purpose-h').parentNode.addEventListener('change', function () { $('fb-err').textContent = ''; });
 
-  function decodeJwt(token) {
-    var base64Url = token.split('.')[1];
-    var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-    var jsonPayload = decodeURIComponent(atob(base64).split('').map(function (c) {
-      return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-    }).join(''));
-    return JSON.parse(jsonPayload);
-  }
 
-  function applyGoogleUser(profile) {
-    googleProfile = profile;
-    if (profile.name && !$('fb-name').value.trim()) $('fb-name').value = profile.name;
-    $('fb-g-avatar').src = profile.picture || '';
-    $('fb-g-label').textContent = profile.name + ' (' + profile.email + ')';
+  /* ---- Google sign-in (uses the shared NCAuth module) ---- */
+  function applyGoogleUser(p) {
+    googleProfile = p;
+    if (p.name && !$('fb-name').value.trim()) $('fb-name').value = p.name;
+    $('fb-g-avatar').src = p.picture || '';
+    $('fb-g-label').textContent = (p.name || 'Google user') + ' \u00b7 ' + p.email;
     $('fb-google-user').classList.add('on');
-    $('fb-google-btn-slot').style.display = 'none';
+    $('fb-google-btn-slot').style.display = 'none'; $('fb-or').style.display = 'none';
     $('fb-err').textContent = '';
   }
-
   function clearGoogleUser() {
     googleProfile = null;
     $('fb-google-user').classList.remove('on');
-    $('fb-google-btn-slot').style.display = '';
-    if (window.google && google.accounts && google.accounts.id) google.accounts.id.disableAutoSelect();
+    $('fb-google-btn-slot').style.display = ''; $('fb-or').style.display = '';
   }
-
-  $('fb-g-out').addEventListener('click', clearGoogleUser);
-
-  function initGoogleSignIn() {
-    var hasClientId = GOOGLE_CLIENT_ID && GOOGLE_CLIENT_ID.indexOf('YOUR_GOOGLE_CLIENT_ID') === -1;
-    if (hasClientId && window.google && google.accounts && google.accounts.id) {
-      google.accounts.id.initialize({
-        client_id: GOOGLE_CLIENT_ID,
-        callback: function (res) {
-          try {
-            var p = decodeJwt(res.credential);
-            applyGoogleUser({ name: p.name || '', email: p.email || '', picture: p.picture || '' });
-          } catch (e) { fail('Could not verify Google account. Please enter your name above.'); }
-        }
-      });
+  $('fb-g-out').addEventListener('click', function () { NCAuth.signOut(); });
+  if (window.NCAuth) {
+    NCAuth.onChange(function (p) { if (p) applyGoogleUser(p); else clearGoogleUser(); });
+    NCAuth.whenReady(function () {
       var slot = $('fb-google-btn-slot');
-      slot.innerHTML = '';
-      google.accounts.id.renderButton(slot, { theme: 'outline', size: 'large', width: 320, text: 'continue_with' });
-    } else {
-      var fbBtn = $('fb-google-fallback');
-      if (fbBtn) {
-        fbBtn.addEventListener('click', function () {
-          if (window.google && google.accounts && google.accounts.id && hasClientId) {
-            google.accounts.id.prompt();
-          } else {
-            fail('Add your Google OAuth Client ID in index.html to activate Google Sign-In, or type your name above.');
-          }
-        });
-      }
-    }
+      NCAuth.renderButton(slot, { theme: 'outline', size: 'large', shape: 'pill', text: 'continue_with', width: Math.min(320, slot.clientWidth || 320) });
+      $('fb-google-row').classList.add('ready');
+      if (NCAuth.profile()) applyGoogleUser(NCAuth.profile());
+    });
   }
-  window.addEventListener('load', initGoogleSignIn);
 
   var reveal = [$('fb-intro'), $('fb-stack')];
   if ('IntersectionObserver' in window) {
@@ -3137,54 +3172,39 @@ if (benchSec) compObserver.observe(benchSec);
   }
   function fail(msg) { var e = $('fb-err'); e.textContent = msg; e.classList.remove('shake'); void e.offsetWidth; e.classList.add('shake'); }
   function valid() {
-    if (step === 0 && !val('fb-name')) { fail('Please tell us your name or sign in with Google.'); return false; }
+    if (step === 0 && !val('fb-name')) { fail('Please tell us your name' + ($('fb-google-row').classList.contains('ready') ? ' or sign in with Google.' : '.')); return false; }
     if (step === 1 && !checked('fb-purpose')) { fail('Please choose a purpose.'); return false; }
     if (step === 3 && !checked('fb-sat')) { fail('Please pick a score from 1 to 10.'); return false; }
     return true;
   }
-  function submit() {
-    var d = {
-      _subject: 'NC-MutScan Feedback from ' + val('fb-name'),
-      _template: 'table',
-      name: val('fb-name'),
-      google_email: googleProfile ? googleProfile.email : '(not signed in with Google)',
-      purpose: checked('fb-purpose'),
-      organisation: val('fb-org') || '(not given)',
-      satisfaction: checked('fb-sat') + '/10',
-      submitted: new Date().toISOString()
-    };
-    try { var all = JSON.parse(localStorage.getItem('ncmutscan_feedback') || '[]'); all.push(d); localStorage.setItem('ncmutscan_feedback', JSON.stringify(all)); } catch (e) {}
-
-    $('fb-status-msg').innerHTML = 'Sending feedback to <strong>' + OWNER_EMAIL + '</strong>&hellip;';
-    fetch(FEEDBACK_ENDPOINT, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(d)
-    }).then(function (r) {
-      if (r.ok) {
-        $('fb-status-msg').innerHTML = 'Delivered directly to <strong>' + OWNER_EMAIL + '</strong>. Thank you!';
-      } else {
-        $('fb-status-msg').innerHTML = 'Saved! Click <strong>Open in email client</strong> below to send directly to <strong>' + OWNER_EMAIL + '</strong>.';
-      }
-    }).catch(function () {
-      $('fb-status-msg').innerHTML = 'Saved! Click <strong>Open in email client</strong> below to send directly to <strong>' + OWNER_EMAIL + '</strong>.';
-    });
-
-    var body = 'Name: ' + d.name + '
-Google Email: ' + d.google_email + '
-Purpose: ' + d.purpose + '
-Organisation: ' + d.organisation + '
-Satisfaction: ' + d.satisfaction;
-    $('fb-mail').href = 'mailto:' + OWNER_EMAIL + '?subject=' + encodeURIComponent(d._subject) + '&body=' + encodeURIComponent(body);
+  function finish(d, sent) {
+    var body = 'Name: ' + d.name + (googleProfile ? '\nGoogle email: ' + googleProfile.email : '') + '\nPurpose: ' + d.purpose + '\nOrganisation: ' + d.organisation + '\nSatisfaction: ' + d.satisfaction + '/10';
+    $('fb-mail').href = 'mailto:' + OWNER_EMAIL + '?subject=' + encodeURIComponent('NC-MutScan feedback') + '&body=' + encodeURIComponent(body);
+    $('fb-mail').style.display = sent ? 'none' : '';
+    $('fb-status').textContent = sent ? 'Your feedback has been sent to the author. It genuinely helps.' : 'We could not send it automatically (a copy is saved on this device). Please use the email link below.';
     $('fb-thanks-name').textContent = d.name ? ', ' + d.name.split(' ')[0] : '';
+    $('fb-next').disabled = false;
     go(TOTAL);
+  }
+  function submit() {
+    var d = { name: val('fb-name'), purpose: checked('fb-purpose'), organisation: val('fb-org') || '(not given)', satisfaction: +checked('fb-sat'), submitted: new Date().toISOString() };
+    try { var all = JSON.parse(localStorage.getItem('ncmutscan_feedback') || '[]'); all.push(d); localStorage.setItem('ncmutscan_feedback', JSON.stringify(all)); } catch (e) {}
+    var btn = $('fb-next'); btn.disabled = true; btn.textContent = 'Sending\u2026';
+    var payload = { Name: d.name, 'Google account email': googleProfile ? googleProfile.email : '(not signed in with Google)', Purpose: d.purpose, Organisation: d.organisation, 'Satisfaction (out of 10)': d.satisfaction, Submitted: d.submitted,
+                    _subject: 'NC-MutScan feedback from ' + d.name + ' (' + d.satisfaction + '/10)', _template: 'table', _captcha: 'false' };
+    var ctl = ('AbortController' in window) ? new AbortController() : null, timer = ctl ? setTimeout(function () { ctl.abort(); }, 15000) : null;
+    fetch(FEEDBACK_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(payload), signal: ctl ? ctl.signal : undefined })
+      .then(function (r) { return r.json().then(function (j) { return r.ok && (j.success === true || j.success === 'true'); }, function () { return r.ok; }); })
+      .catch(function () { return false; })
+      .then(function (ok) { if (timer) clearTimeout(timer); finish(d, ok); });
   }
   $('fb-next').addEventListener('click', function () { if (!valid()) return; if (step === TOTAL - 1) submit(); else go(step + 1); });
   $('fb-back').addEventListener('click', function () { if (step > 0) go(step - 1); });
   $('fb-again').addEventListener('click', function () {
+    $('fb-mail').style.display = '';
     ['fb-name', 'fb-org'].forEach(function (id) { $(id).value = ''; });
     document.querySelectorAll('#feedback input[type=radio]').forEach(function (r) { r.checked = false; });
-    $('fb-word').textContent = ''; go(0);
+    $('fb-word').textContent = ''; if (googleProfile && googleProfile.name) $('fb-name').value = googleProfile.name; go(0);
   });
   ['fb-name', 'fb-org'].forEach(function (id) { $(id).addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); $('fb-next').click(); } }); });
   setInert(); go(0);

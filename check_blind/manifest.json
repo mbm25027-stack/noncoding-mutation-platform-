@@ -1,0 +1,28 @@
+{
+  "clinvar_file": "clinvar.vcf",
+  "clinvar_sha256": "05f3cd50eb01f665fb75671dc914a5ac7b48be3561d50e3880170cd5b0f6bc14",
+  "clinvar_fileDate": "2026-11-08",
+  "chroms": "12-22",
+  "min_stars": 0,
+  "max_len": 15,
+  "snv_only": false,
+  "seed": 42,
+  "n_per_class": 75,
+  "n_extra_draws": 0,
+  "excluded_variants_loaded": 0,
+  "pool_counts_after_filters": {
+    "pathogenic_pool": 48684,
+    "benign_pool": 194458
+  },
+  "dropped_by_reason": {
+    "chrom": 2900468,
+    "coding_consequence": 407409,
+    "not_P_or_B": 1055159,
+    "too_long": 11009,
+    "no_molecular_consequence": 3349
+  },
+  "outputs": {
+    "holdout_balanced.vcf": "b07fb5305251516806dd650be93c39731c766cbc8f05bf3c9293eaf0008a55a8",
+    "pool_all.vcf": "571b24f70c8fc8d260d059e7d9b559a828df5248d450d439a1ed2c77ac6e61b1"
+  }
+}
