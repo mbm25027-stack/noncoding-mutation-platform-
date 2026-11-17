@@ -1,0 +1,89 @@
+{
+  "pool_definition": {
+    "source_file": "check_dev_v2\\pool_all.vcf",
+    "min_stars": 0,
+    "excluded_mc_terms": [
+      "none"
+    ],
+    "removed_counts": {},
+    "n_pathogenic_in_pool": 3252,
+    "n_benign_in_pool": 333764
+  },
+  "n_pathogenic_evaluated": 3252,
+  "n_benign_evaluated": 333764,
+  "scoring_status": {
+    "ok": 337016
+  },
+  "n_clusters": 4876,
+  "n_boot": 2000,
+  "n_bootstrap_draws_with_nan": {
+    "auprc": 0,
+    "auroc": 0,
+    "sensitivity": 0,
+    "specificity": 0,
+    "ppv": 0,
+    "npv": 0
+  },
+  "pool_prevalence": 0.009649393500605313,
+  "score_used_for_ranking": "S_raw",
+  "call_used_for_threshold_metrics": "is_frozen_driver_call",
+  "frac_S_raw_zero": {
+    "pathogenic": 0.7936654366543665,
+    "benign": 0.8991083520092041
+  },
+  "metrics": {
+    "auprc": {
+      "estimate": 0.013029121619458486,
+      "ci95_gene_clustered": [
+        0.011291316758235238,
+        0.015064054328932564
+      ]
+    },
+    "auroc": {
+      "estimate": 0.5534757658603238,
+      "ci95_gene_clustered": [
+        0.5449266091029865,
+        0.5623077238685263
+      ]
+    },
+    "sensitivity": {
+      "estimate": 0.1645141451414514,
+      "ci95_gene_clustered": [
+        0.14785075008299622,
+        0.18043026213442803
+      ]
+    },
+    "specificity": {
+      "estimate": 0.9587642765546913,
+      "ci95_gene_clustered": [
+        0.9577732121704698,
+        0.9596971358157251
+      ]
+    },
+    "ppv": {
+      "estimate": 0.03741782067422017,
+      "ci95_gene_clustered": [
+        0.031677584813466685,
+        0.04340372780546669
+      ]
+    },
+    "npv": {
+      "estimate": 0.9915808848592269,
+      "ci95_gene_clustered": [
+        0.99058630833057,
+        0.9925319901479587
+      ]
+    }
+  },
+  "confusion": {
+    "tp": 535,
+    "fp": 13763,
+    "fn": 2717,
+    "tn": 320001
+  },
+  "fpr_point": 0.04123572344530866,
+  "fpr_clopper_pearson_95_(ignores_clustering)": [
+    0.04056365006229605,
+    0.041915776764304025
+  ]
+}

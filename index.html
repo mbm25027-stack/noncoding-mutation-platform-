@@ -423,6 +423,91 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
 }
 .hero-meta span::before { content: ""; display: inline-block; width: 6px; height: 6px; background: var(--mint); margin-right: 8px; vertical-align: middle; }
 
+/* ===== HERO VIDEO: cinematic backdrop + slow text reveal (additive; layout/engine untouched) ===== */
+.hero { position: relative; isolation: isolate; overflow: hidden; background: #060d1c; }
+.hero-video-wrap { position: absolute; inset: 0; z-index: -1; overflow: hidden; background: #060d1c; }
+.hero-video { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+.hero-video-scrim { position: absolute; inset: 0; background:
+  linear-gradient(90deg, rgba(6,13,28,.78) 0%, rgba(6,13,28,.52) 48%, rgba(6,13,28,.18) 100%),
+  linear-gradient(180deg, rgba(6,13,28,.35) 0%, rgba(6,13,28,0) 30%, rgba(6,13,28,.45) 100%); }
+.hero .eyebrow { color: var(--mint-l); }
+.hero h1 { color: #f4f8ff; text-shadow: 0 2px 30px rgba(0,0,0,.45); }
+.hero h1 em { color: #8cc7ff; }
+.hero .hero-lede { color: rgba(226,236,248,.88); text-shadow: 0 1px 16px rgba(0,0,0,.5); }
+.hero .hero-meta { color: rgba(214,226,238,.82); }
+.hero .text-button { color: #f4f8ff; } .hero .text-button:hover { color: var(--blue-l); }
+.hero .notice { position: relative; }
+
+/* staged reveal: armed by JS, released when the video starts playing (fully visible if JS is off) */
+@keyframes heroWordIn { from { opacity: 0; transform: translateY(16px); filter: blur(9px); } to { opacity: 1; transform: none; filter: blur(0); } }
+@keyframes heroBlockIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.hero.hero-armed .hw, .hero.hero-armed .hb { opacity: 0; }
+.hero.hero-go .hw { animation: heroWordIn 1.15s cubic-bezier(.22,.61,.36,1) both; animation-delay: var(--d, 0s); }
+.hero.hero-go .hb { animation: heroBlockIn 1.2s cubic-bezier(.22,.61,.36,1) both; animation-delay: var(--d, 0s); }
+.hw { display: inline-block; }
+@media (prefers-reduced-motion: reduce) {
+  .hero.hero-armed .hw, .hero.hero-armed .hb { opacity: 1; }
+  .hero.hero-go .hw, .hero.hero-go .hb { animation: none; }
+}
+
+
+/* ===== EVIDENCE CATALOG: smooth hover-expand strips (progressive enhancement; original .ev-list is the fallback) ===== */
+.ev-vlabel { display: none; }
+@media (min-width: 1021px) {
+  .ev-list.ev-acc { display: flex; gap: 10px; height: 470px; border-top: 0; }
+  .ev-acc .ev-row { --ease: cubic-bezier(.22,.61,.36,1);
+    position: relative; overflow: hidden; flex: 1 1 0; min-width: 0; cursor: pointer; outline-offset: -3px;
+    display: grid; grid-template-columns: 72px 520px; grid-template-areas: "no meta" "no title" "no text" "no side";
+    align-content: center; column-gap: 22px; row-gap: 14px; padding: 30px 0; align-items: start;
+    background: var(--ink); border: 1px solid rgba(255,255,255,.07);
+    transition: flex-grow .95s var(--ease), background .6s ease, border-color .6s ease, transform .9s var(--ease), opacity .9s ease; }
+  .ev-acc .ev-row:hover:not(.ev-active) { background: #14233a; border-color: rgba(101,210,187,.28); }
+  .ev-acc .ev-row.ev-active { flex-grow: 9; border-color: rgba(101,210,187,.22);
+    background: radial-gradient(120% 90% at 85% 0%, rgba(34,91,157,.38), transparent 60%), linear-gradient(165deg, #182b3c, #0f172a 70%); }
+  .ev-acc .ev-row::after { content: ""; position: absolute; left: 0; top: 0; height: 3px; width: 100%; background: var(--mint-l);
+    transform: scaleX(0); transform-origin: left; transition: transform 1s var(--ease); }
+  .ev-acc .ev-row.ev-active::after { transform: scaleX(1); }
+
+  .ev-acc .ev-no { grid-area: no; align-self: start; text-align: center; color: var(--mint-l); font-size: 12px; letter-spacing: .1em; padding-top: 2px; }
+  .ev-acc .ev-row > div:nth-child(2) { grid-area: meta; }
+  .ev-acc .ev-row > div:nth-child(3) { grid-area: title; }
+  .ev-acc .ev-text { grid-area: text; }
+  .ev-acc .ev-side { grid-area: side; }
+  .ev-acc .ev-row > div:nth-child(n+2) { opacity: 0; transform: translateX(26px); pointer-events: none;
+    transition: opacity .25s ease, transform .35s var(--ease); }
+  .ev-acc .ev-row.ev-active > div:nth-child(n+2) { opacity: 1; transform: none; pointer-events: auto;
+    transition: opacity .7s ease .38s, transform .9s var(--ease) .38s; }
+  .ev-acc .ev-row.ev-active > div:nth-child(3) { transition-delay: .46s; }
+  .ev-acc .ev-row.ev-active > div:nth-child(4) { transition-delay: .54s; }
+  .ev-acc .ev-row.ev-active > div:nth-child(5) { transition-delay: .62s; }
+
+  .ev-acc .ev-tag { color: var(--mint-l); }
+  .ev-acc .ev-locus, .ev-acc .ev-cite { color: #9fb2bd; }
+  .ev-acc .ev-row h3 { color: #fff; font-size: 30px; }
+  .ev-acc .ev-target { color: #8ec0f2; }
+  .ev-acc .ev-text { color: #c5d3da; }
+  .ev-acc .ev-side dt { color: #8ea2ad; } .ev-acc .ev-side dd { color: #e6eef2; }
+
+  /* rotated strip label, fades out as the strip opens */
+  .ev-vlabel { display: flex; position: absolute; left: 0; bottom: 26px; width: 72px; display: flex; justify-content: center; pointer-events: none;
+    writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; font: 600 24px/1 var(--serif); color: rgba(255,255,255,.62);
+    transition: opacity .3s ease .1s, color .4s ease; }
+  .ev-acc .ev-row:hover .ev-vlabel { color: #fff; }
+  .ev-acc .ev-row.ev-active .ev-vlabel { opacity: 0; transition-delay: 0s; }
+
+  /* staggered entrance when the section scrolls into view */
+  .ev-acc.ev-pre .ev-row { opacity: 0; transform: translateY(34px); }
+  .ev-acc.ev-in .ev-row:nth-child(2) { transition-delay: .12s, 0s, 0s, .12s, .12s; }
+  .ev-acc.ev-in .ev-row:nth-child(3) { transition-delay: .24s, 0s, 0s, .24s, .24s; }
+}
+@media (min-width: 1280px) {
+  .ev-acc .ev-row { grid-template-columns: 72px 470px 300px; grid-template-areas: "no meta side" "no title side" "no text side"; }
+  .ev-acc .ev-side { align-self: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ev-acc .ev-row, .ev-acc .ev-row > div, .ev-acc .ev-row::after, .ev-vlabel { transition: none !important; }
+}
+
 /* ===== Mechanism animation controls ===== */
 .nc-ctrl { display: flex; align-items: center; gap: 10px; padding: 10px 16px 12px; border-top: 1px solid rgba(255,255,255,.08); }
 .nc-btn { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.28); color: #e6ecf8; font: 600 12px var(--mono); letter-spacing: .06em; text-transform: uppercase; padding: 7px 12px; cursor: pointer; }
@@ -487,6 +572,13 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
 .ab-slide .about-card { height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; padding: clamp(26px, 4.5vw, 46px); overflow: hidden; }
 .ab-slide .about-card h3 { font-size: clamp(26px, 3.2vw, 32px); }
 .ab-slide .about-card p, .ab-slide .about-card li { font-size: 15px; line-height: 1.7; }
+.ab-slide .about-card { background: linear-gradient(135deg, #eaf6ff 0%, #c4e5fb 45%, #92cff6 100%); border-color: rgba(74,150,214,.35); color: #16324a; position: relative; box-shadow: 0 18px 44px rgba(56,140,210,.18); }
+.ab-slide .about-card::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(90% 70% at 90% 0%, rgba(255,255,255,.65), transparent 60%); }
+.ab-slide .about-card > * { position: relative; }
+.ab-slide .about-card h3 { color: #0f2a43; }
+.ab-slide .about-card p, .ab-slide .about-card li { color: #1f405c; }
+.ab-slide .about-card a { color: #14487f; }
+.ab-slide:nth-child(even) .about-card { background: linear-gradient(225deg, #eaf6ff 0%, #bfe2fa 48%, #86c8f3 100%); }
 .ab-shade { position: absolute; inset: 0; background: #0f172a; opacity: 0; pointer-events: none; transition: opacity .7s ease; }
 .ab-ctrl { display: flex; align-items: center; justify-content: center; gap: 14px; padding-top: 18px; }
 .ab-btn { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line-2, #c3cdc9); background: #fff; color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font: 500 16px var(--mono); transition: border-color .2s, background .2s; }
@@ -578,6 +670,8 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
 .fb-slide h3 { font: 600 clamp(26px, 3vw, 34px)/1.1 var(--serif); color: #fff; margin: 0 0 22px; }
 .fb-slide h3 small { display: block; font: 400 13px/1.5 var(--sans); color: #9fb3c8; margin-top: 8px; }
 .fb-input { width: 100%; box-sizing: border-box; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.2); border-radius: 8px; color: #fff; font: 500 18px var(--sans); padding: 15px 16px; transition: border-color .2s, background .2s, box-shadow .2s; }
+.fb-textarea { resize: none; min-height: 132px; line-height: 1.55; font-size: 16px; font-weight: 400; }
+.fb-counter { align-self: flex-end; margin-top: 8px; font: 500 11px var(--mono); letter-spacing: .08em; color: #7f93a8; }
 .fb-input::placeholder { color: #7f93a8; }
 .fb-input:focus { outline: none; border-color: #65d2bb; background: rgba(255,255,255,.09); box-shadow: 0 0 0 3px rgba(101,210,187,.22); }
 .fb-chips, .fb-rate { border: 0; margin: 0; padding: 0; min-width: 0; }
@@ -664,6 +758,12 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
 <main id="top">
 <!-- ===================== HERO ===================== -->
 <section class="hero" id="overview">
+  <div class="hero-video-wrap" aria-hidden="true">
+    <video class="hero-video" id="hero-video" muted playsinline preload="auto" disablepictureinpicture>
+      <source src="dna_hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-scrim"></div>
+  </div>
   <div class="hero-grid">
     <div>
       <div class="eyebrow"><span class="eyebrow-dot"></span>Computational Genomics &middot; Release 3.1</div>
@@ -698,6 +798,49 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
     <span><strong>Research &amp; Diagnostic Interface (v3.1):</strong> Combines direct sequence-level Motif Scanning (&Delta;PWM) with tissue-specific chromatin accessibility and 3D Hi-C topology mapping. Tested against real oncogenic driver hotspots (TERT, PLEKHS1, SDHD).</span>
   </div>
 </section>
+
+
+<script>
+/* Hero: word-by-word text reveal synced to the backdrop video */
+(function () {
+  var hero = document.getElementById('overview'), vid = document.getElementById('hero-video');
+  if (!hero) return;
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function split(el, start, step) {
+    var n = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (c) {
+        if (c.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          c.nodeValue.split(/(\s+)/).forEach(function (t) {
+            if (!t) return;
+            if (/^\s+$/.test(t)) { frag.appendChild(document.createTextNode(' ')); return; }
+            var w = document.createElement('span'); w.className = 'hw'; w.textContent = t;
+            w.style.setProperty('--d', (start + n++ * step).toFixed(2) + 's'); frag.appendChild(w);
+          });
+          node.replaceChild(frag, c);
+        } else if (c.nodeType === 1 && c.tagName !== 'BR') walk(c);
+      });
+    })(el);
+    return n;
+  }
+  var h1 = hero.querySelector('h1'), lede = hero.querySelector('.hero-lede');
+  if (h1) split(h1, 0.7, 0.30);
+  if (lede) split(lede, 3.0, 0.05);
+  [['.eyebrow', .2], ['.hero-actions', 5.2], ['.hero-meta', 5.8], ['.notice', 6.4]].forEach(function (b) {
+    var e = hero.querySelector(b[0]); if (e) { e.classList.add('hb'); e.style.setProperty('--d', b[1] + 's'); }
+  });
+  hero.classList.add('hero-armed');
+  var released = false;
+  function go() { if (released) return; released = true; hero.classList.add('hero-go'); }
+  if (vid && !reduce) {
+    vid.addEventListener('playing', go, { once: true });
+    var pr = vid.play(); if (pr && pr.catch) pr.catch(go);
+    setTimeout(go, 2500);
+    /* ends on the calm helix frame and holds there; no hard loop cut */
+  } else { if (vid) { vid.addEventListener('loadeddata', function () { vid.pause(); }); } go(); }
+})();
+</script>
 
 <!-- ===================== CROWD CANVAS (decorative) =====================
      To use your own sprite sheet (e.g. Open Peeps all-peeps.png), set
@@ -1214,6 +1357,34 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
   </div>
 </section>
 
+
+<script>
+/* Evidence Catalog: hover-expand strips (adds classes only; content/engine untouched) */
+(function () {
+  var list = document.querySelector('#evidence .ev-list'); if (!list) return;
+  var rows = Array.prototype.slice.call(list.querySelectorAll('.ev-row')); if (!rows.length) return;
+  var mq = window.matchMedia('(min-width: 1021px)'), canHover = window.matchMedia('(hover: hover)').matches;
+  list.classList.add('ev-acc');
+  rows.forEach(function (r, i) {
+    var h = r.querySelector('h3'), v = document.createElement('span');
+    v.className = 'ev-vlabel'; v.setAttribute('aria-hidden', 'true'); v.textContent = h ? h.textContent.replace(/\s*\(.*\)/, '') : '';
+    r.appendChild(v);
+    r.setAttribute('tabindex', '0');
+    function act() { rows.forEach(function (x) { var on = x === r; x.classList.toggle('ev-active', on); x.setAttribute('aria-expanded', on); }); }
+    if (canHover) r.addEventListener('mouseenter', function () { if (mq.matches) act(); });
+    r.addEventListener('focus', function () { if (mq.matches) act(); });
+    r.addEventListener('click', function () { if (mq.matches) act(); });
+    if (i === 0) act();
+  });
+  list.classList.add('ev-pre');
+  function show() { list.classList.add('ev-in'); requestAnimationFrame(function () { requestAnimationFrame(function () { list.classList.remove('ev-pre'); }); }); }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) { if (es[0].isIntersecting) { show(); io.disconnect(); } }, { threshold: 0.25 });
+    io.observe(list);
+  } else show();
+})();
+</script>
+
 <!-- ===================== METHODS ===================== -->
 <section class="section-pad methods-section" id="methods">
   <div class="methods-card">
@@ -1341,12 +1512,12 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
     <div class="fb-intro fb-reveal" id="fb-intro">
       <div class="eyebrow"><span class="eyebrow-dot"></span>Your Voice</div>
       <h2 id="fb-title">How was your <em>experience?</em></h2>
-      <p>Four quick questions, under a minute. Your feedback helps shape the next release of NC-MutScan.</p>
+      <p>Five quick questions, under a minute. Your feedback helps shape the next release of NC-MutScan.</p>
     </div>
 
     <div class="fb-stack fb-reveal" id="fb-stack">
       <div class="fb-card-shell">
-        <div class="fb-top"><span id="fb-count">01 / 04</span><div class="fb-bar"><i id="fb-prog"></i></div></div>
+        <div class="fb-top"><span id="fb-count">01 / 05</span><div class="fb-bar"><i id="fb-prog"></i></div></div>
         <div class="fb-track" id="fb-track">
 
           <div class="fb-slide active" data-step="0">
@@ -1391,7 +1562,14 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
             <div class="fb-word" id="fb-word" aria-live="polite"></div>
           </div>
 
-          <div class="fb-slide fb-done" data-step="4">
+          <div class="fb-slide" data-step="4">
+            <div class="fb-q">Question 5</div>
+            <h3><label for="fb-thoughts">What&rsquo;s your thought on this?<small>Any impressions, ideas or suggestions &mdash; optional.</small></label></h3>
+            <textarea class="fb-input fb-textarea" id="fb-thoughts" rows="5" maxlength="1000" placeholder="Share your thoughts on NC-MutScan&hellip;"></textarea>
+            <div class="fb-counter" id="fb-thoughts-count" aria-hidden="true">0 / 1000</div>
+          </div>
+
+          <div class="fb-slide fb-done" data-step="5">
             <svg class="fb-check" viewBox="0 0 84 84" aria-hidden="true"><circle cx="42" cy="42" r="30"/><path d="M29 43l9 9 18-20"/></svg>
             <h3>Thank you<span id="fb-thanks-name"></span>!</h3>
             <p id="fb-status">Your feedback has been received. It genuinely helps.</p>
@@ -3114,7 +3292,7 @@ document.addEventListener('keydown', function (e) { if (e.key === 'Escape') clos
   var googleProfile = null;   /* sign-in itself lives in the shared NCAuth module above */
   var $ = function (id) { return document.getElementById(id); };
   var track = $('fb-track'); if (!track) return;
-  var slides = track.querySelectorAll('.fb-slide'), step = 0, TOTAL = 4;
+  var slides = track.querySelectorAll('.fb-slide'), step = 0, TOTAL = 5;
   var words = ['', 'Very poor', 'Poor', 'Below average', 'Fair', 'Okay', 'Good', 'Very good', 'Great', 'Excellent', 'Outstanding'];
   var rate = $('fb-rate'), h = '';
   for (var i = 1; i <= 10; i++) h += '<label class="fb-num"><input type="radio" name="fb-sat" value="' + i + '" aria-label="' + i + ' out of 10"><span>' + i + '</span></label>';
@@ -3168,7 +3346,7 @@ document.addEventListener('keydown', function (e) { if (e.key === 'Escape') clos
     $('fb-nav').style.display = step >= TOTAL ? 'none' : '';
     $('fb-next').innerHTML = step === TOTAL - 1 ? 'Submit &#10003;' : 'Next &rarr;';
     $('fb-err').textContent = '';
-    setTimeout(function () { var f = slides[step].querySelector('input'); if (f && step < TOTAL) f.focus({ preventScroll: true }); }, 450);
+    setTimeout(function () { var f = slides[step].querySelector('input, textarea'); if (f && step < TOTAL) f.focus({ preventScroll: true }); }, 450);
   }
   function fail(msg) { var e = $('fb-err'); e.textContent = msg; e.classList.remove('shake'); void e.offsetWidth; e.classList.add('shake'); }
   function valid() {
@@ -3178,7 +3356,7 @@ document.addEventListener('keydown', function (e) { if (e.key === 'Escape') clos
     return true;
   }
   function finish(d, sent) {
-    var body = 'Name: ' + d.name + (googleProfile ? '\nGoogle email: ' + googleProfile.email : '') + '\nPurpose: ' + d.purpose + '\nOrganisation: ' + d.organisation + '\nSatisfaction: ' + d.satisfaction + '/10';
+    var body = 'Name: ' + d.name + (googleProfile ? '\nGoogle email: ' + googleProfile.email : '') + '\nPurpose: ' + d.purpose + '\nOrganisation: ' + d.organisation + '\nSatisfaction: ' + d.satisfaction + '/10' + '\nThoughts: ' + (d.thoughts || '(none)');
     $('fb-mail').href = 'mailto:' + OWNER_EMAIL + '?subject=' + encodeURIComponent('NC-MutScan feedback') + '&body=' + encodeURIComponent(body);
     $('fb-mail').style.display = sent ? 'none' : '';
     $('fb-status').textContent = sent ? 'Your feedback has been sent to the author. It genuinely helps.' : 'We could not send it automatically (a copy is saved on this device). Please use the email link below.';
@@ -3187,10 +3365,10 @@ document.addEventListener('keydown', function (e) { if (e.key === 'Escape') clos
     go(TOTAL);
   }
   function submit() {
-    var d = { name: val('fb-name'), purpose: checked('fb-purpose'), organisation: val('fb-org') || '(not given)', satisfaction: +checked('fb-sat'), submitted: new Date().toISOString() };
+    var d = { name: val('fb-name'), purpose: checked('fb-purpose'), organisation: val('fb-org') || '(not given)', satisfaction: +checked('fb-sat'), thoughts: val('fb-thoughts'), submitted: new Date().toISOString() };
     try { var all = JSON.parse(localStorage.getItem('ncmutscan_feedback') || '[]'); all.push(d); localStorage.setItem('ncmutscan_feedback', JSON.stringify(all)); } catch (e) {}
     var btn = $('fb-next'); btn.disabled = true; btn.textContent = 'Sending\u2026';
-    var payload = { Name: d.name, 'Google account email': googleProfile ? googleProfile.email : '(not signed in with Google)', Purpose: d.purpose, Organisation: d.organisation, 'Satisfaction (out of 10)': d.satisfaction, Submitted: d.submitted,
+    var payload = { Name: d.name, 'Google account email': googleProfile ? googleProfile.email : '(not signed in with Google)', Purpose: d.purpose, Organisation: d.organisation, 'Satisfaction (out of 10)': d.satisfaction, Thoughts: d.thoughts || '(none)', Submitted: d.submitted,
                     _subject: 'NC-MutScan feedback from ' + d.name + ' (' + d.satisfaction + '/10)', _template: 'table', _captcha: 'false' };
     var ctl = ('AbortController' in window) ? new AbortController() : null, timer = ctl ? setTimeout(function () { ctl.abort(); }, 15000) : null;
     fetch(FEEDBACK_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(payload), signal: ctl ? ctl.signal : undefined })
@@ -3202,11 +3380,12 @@ document.addEventListener('keydown', function (e) { if (e.key === 'Escape') clos
   $('fb-back').addEventListener('click', function () { if (step > 0) go(step - 1); });
   $('fb-again').addEventListener('click', function () {
     $('fb-mail').style.display = '';
-    ['fb-name', 'fb-org'].forEach(function (id) { $(id).value = ''; });
+    ['fb-name', 'fb-org', 'fb-thoughts'].forEach(function (id) { $(id).value = ''; }); $('fb-thoughts-count').textContent = '0 / 1000';
     document.querySelectorAll('#feedback input[type=radio]').forEach(function (r) { r.checked = false; });
     $('fb-word').textContent = ''; if (googleProfile && googleProfile.name) $('fb-name').value = googleProfile.name; go(0);
   });
   ['fb-name', 'fb-org'].forEach(function (id) { $(id).addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); $('fb-next').click(); } }); });
+  $('fb-thoughts').addEventListener('input', function () { $('fb-thoughts-count').textContent = this.value.length + ' / 1000'; });
   setInert(); go(0);
 })();
 </script>

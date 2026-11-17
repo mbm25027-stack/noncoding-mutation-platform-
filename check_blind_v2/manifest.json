@@ -1,0 +1,64 @@
+{
+  "clinvar_file": "clinvar.vcf",
+  "clinvar_fileDate": "2026-11-08",
+  "chroms": "12-22",
+  "min_stars": 0,
+  "max_len": 15,
+  "snv_only": false,
+  "seed": 42,
+  "n_per_class": 75,
+  "splice_scope": "exclude",
+  "excluded_mc_terms": [
+    "coding_sequence_variant",
+    "frameshift",
+    "frameshift_variant",
+    "incomplete_terminal_codon_variant",
+    "inframe_deletion",
+    "inframe_indel",
+    "inframe_insertion",
+    "initiator_codon_variant",
+    "missense",
+    "missense_variant",
+    "no_sequence_alteration",
+    "nonsense",
+    "nonsense_variant",
+    "protein_altering_variant",
+    "splice_acceptor_variant",
+    "splice_donor_variant",
+    "start_lost",
+    "stop_gained",
+    "stop_lost",
+    "stop_retained_variant",
+    "synonymous",
+    "synonymous_variant"
+  ],
+  "pool_counts_after_filters": {
+    "pathogenic_pool": 1847,
+    "benign_pool": 193519
+  },
+  "dropped_by_reason": {
+    "chrom": 2900468,
+    "excluded_consequence": 460134,
+    "not_P_or_B": 1059415,
+    "too_long_or_multiallelic": 1540,
+    "no_molecular_consequence": 3613
+  },
+  "mc_counts_in_pool": {
+    "P": {
+      "intron_variant": 1640,
+      "non-coding_transcript_variant": 138,
+      "5_prime_UTR_variant": 73,
+      "3_prime_UTR_variant": 51,
+      "genic_downstream_transcript_variant": 36,
+      "genic_upstream_transcript_variant": 13
+    },
+    "B": {
+      "intron_variant": 183037,
+      "3_prime_UTR_variant": 9631,
+      "5_prime_UTR_variant": 3966,
+      "non-coding_transcript_variant": 3647,
+      "genic_upstream_transcript_variant": 171,
+      "genic_downstream_transcript_variant": 41
+    }
+  }
+}

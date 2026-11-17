@@ -1,0 +1,95 @@
+{
+  "pool_definition": {
+    "source_file": "check_blind\\pool_all.vcf",
+    "min_stars": 0,
+    "excluded_mc_terms": [
+      "nonsense",
+      "splice_donor_variant",
+      "splice_acceptor_variant",
+      "inframe_indel",
+      "no_sequence_alteration"
+    ],
+    "removed_counts": {
+      "excluded_mc": 47776
+    },
+    "n_pathogenic_in_pool": 1847,
+    "n_benign_in_pool": 193519
+  },
+  "n_pathogenic_evaluated": 1847,
+  "n_benign_evaluated": 193519,
+  "scoring_status": {
+    "ok": 195366
+  },
+  "n_clusters": 2908,
+  "n_boot": 2000,
+  "n_bootstrap_draws_with_nan": {
+    "auprc": 0,
+    "auroc": 0,
+    "sensitivity": 0,
+    "specificity": 0,
+    "ppv": 0,
+    "npv": 0
+  },
+  "pool_prevalence": 0.009454050346529078,
+  "score_used_for_ranking": "S_raw",
+  "call_used_for_threshold_metrics": "is_frozen_driver_call",
+  "frac_S_raw_zero": {
+    "pathogenic": 0.7807255008121278,
+    "benign": 0.9000511577674544
+  },
+  "metrics": {
+    "auprc": {
+      "estimate": 0.013134397844462437,
+      "ci95_gene_clustered": [
+        0.01009074266424522,
+        0.017290179885936573
+      ]
+    },
+    "auroc": {
+      "estimate": 0.5607120924651586,
+      "ci95_gene_clustered": [
+        0.54974299454667,
+        0.5710134214086127
+      ]
+    },
+    "sensitivity": {
+      "estimate": 0.1765024363833243,
+      "ci95_gene_clustered": [
+        0.15595511331498038,
+        0.19667054712244933
+      ]
+    },
+    "specificity": {
+      "estimate": 0.9597713919563454,
+      "ci95_gene_clustered": [
+        0.9585674899129992,
+        0.9609186510579765
+      ]
+    },
+    "ppv": {
+      "estimate": 0.04019233140180002,
+      "ci95_gene_clustered": [
+        0.030236368851290826,
+        0.05260812008154443
+      ]
+    },
+    "npv": {
+      "estimate": 0.9918773864516301,
+      "ci95_gene_clustered": [
+        0.9897433266782704,
+        0.9935531666562116
+      ]
+    }
+  },
+  "confusion": {
+    "tp": 326,
+    "fp": 7785,
+    "fn": 1521,
+    "tn": 185734
+  },
+  "fpr_point": 0.04022860804365463,
+  "fpr_clopper_pearson_95_(ignores_clustering)": [
+    0.03935745423772212,
+    0.041113568380202234
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "pool_definition": {
+    "source_file": "check_blind\\pool_all.vcf",
+    "min_stars": 0,
+    "excluded_mc_terms": [
+      "nonsense",
+      "inframe_indel",
+      "no_sequence_alteration"
+    ],
+    "removed_counts": {
+      "excluded_mc": 30247
+    },
+    "n_pathogenic_in_pool": 19062,
+    "n_benign_in_pool": 193833
+  },
+  "n_pathogenic_evaluated": 19062,
+  "n_benign_evaluated": 193833,
+  "scoring_status": {
+    "ok": 212895
+  },
+  "n_clusters": 2968,
+  "n_boot": 2000,
+  "n_bootstrap_draws_with_nan": {
+    "auprc": 0,
+    "auroc": 0,
+    "sensitivity": 0,
+    "specificity": 0,
+    "ppv": 0,
+    "npv": 0
+  },
+  "pool_prevalence": 0.08953709575142677,
+  "score_used_for_ranking": "S_raw",
+  "call_used_for_threshold_metrics": "is_frozen_driver_call",
+  "frac_S_raw_zero": {
+    "pathogenic": 0.3479173224215717,
+    "benign": 0.8995630259037419
+  },
+  "metrics": {
+    "auprc": {
+      "estimate": 0.455710288812719,
+      "ci95_gene_clustered": [
+        0.4374853130519532,
+        0.47391997105820854
+      ]
+    },
+    "auroc": {
+      "estimate": 0.7942783481240852,
+      "ci95_gene_clustered": [
+        0.788666108297301,
+        0.8003467972281585
+      ]
+    },
+    "sensitivity": {
+      "estimate": 0.6314657433637604,
+      "ci95_gene_clustered": [
+        0.6203043811140829,
+        0.6433785171581603
+      ]
+    },
+    "specificity": {
+      "estimate": 0.9592329479500394,
+      "ci95_gene_clustered": [
+        0.958097078985266,
+        0.9603957557902928
+      ]
+    },
+    "ppv": {
+      "estimate": 0.6036912583379307,
+      "ci95_gene_clustered": [
+        0.5767658795214996,
+        0.6288168384479198
+      ]
+    },
+    "npv": {
+      "estimate": 0.963592736167831,
+      "ci95_gene_clustered": [
+        0.9589117624900669,
+        0.9677691772239865
+      ]
+    }
+  },
+  "confusion": {
+    "tp": 12037,
+    "fp": 7902,
+    "fn": 7025,
+    "tn": 185931
+  },
+  "fpr_point": 0.040767052049960534,
+  "fpr_clopper_pearson_95_(ignores_clustering)": [
+    0.039891004967019666,
+    0.04165686677493202
+  ]
+}
