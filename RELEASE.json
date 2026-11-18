@@ -1,0 +1,12 @@
+{
+  "name": "NC-MutScan",
+  "version": "3.3",
+  "git_tag": "v3.3.0",
+  "core_sha256": "b276d0d440453bf0c1c98647f8825b039a8775738b483fa4aad8cb1119edb2c4",
+  "dev_set_sha256": "7cf78f07c6701e8bf79eaa15a9f2d03745e52b3504d26ce64bff4a44afee29f7",
+  "released": null,
+  "git_commit": null,
+  "doi": null,
+  "concept_doi": null,
+  "changelog": "CHANGELOG.md"
+}

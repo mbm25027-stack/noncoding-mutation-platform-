@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use NC-MutScan, please cite this release."
+title: "NC-MutScan"
+version: "3.3"
+date-released: "YYYY-MM-DD"
+doi: "10.5281/zenodo.XXXXXXX"   # fill after Zenodo issues the DOI (use the concept DOI)
+authors:
+  - family-names: Biswas
+    given-names: Shiladitya
+  - family-names: Basu
+    given-names: "FIRST NAME"
+repository-code: "https://github.com/OWNER/REPO"
+license: "LICENSE-ID"            # e.g. MIT, Apache-2.0, or your own
