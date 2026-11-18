@@ -1,0 +1,49 @@
+name: live-parity
+
+on:
+  push:
+    tags: ["v*"]
+  schedule:
+    - cron: "0 3 * * 1"        # weekly, Monday 03:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  parity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Tag matches RELEASE.json (tag pushes only)
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          python - <<'PY'
+          import json, os, sys
+          tag = os.environ["GITHUB_REF_NAME"]
+          want = json.load(open("RELEASE.json"))["git_tag"]
+          sys.exit(0 if tag == want else f"tag {tag} != RELEASE.json git_tag {want}")
+          PY
+
+      - name: Golden file integrity
+        run: sha256sum -c tests/golden/GOLDEN.sha256
+
+      - name: Replay regression + blind subset against the live API
+        env:
+          LIVE_API_URL: ${{ vars.LIVE_API_URL }}
+        run: |
+          test -n "$LIVE_API_URL" || { echo "Set repository variable LIVE_API_URL"; exit 1; }
+          python tests/live_replay.py --base-url "$LIVE_API_URL" \
+            --golden tests/golden/golden_v3.3.0.json --release RELEASE.json --out parity_report.json
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: parity-report
+          path: parity_report.json

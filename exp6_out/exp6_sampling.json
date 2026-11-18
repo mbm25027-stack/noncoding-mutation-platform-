@@ -1,0 +1,29 @@
+{
+  "seen": {
+    "singleton": 897078,
+    "ultra_rare": 671089,
+    "rare": 117097,
+    "low_freq": 45603,
+    "common": 17889,
+    "very_common": 22523
+  },
+  "kept": {
+    "singleton": 150000,
+    "ultra_rare": 150000,
+    "rare": 117097,
+    "low_freq": 45603,
+    "common": 17889,
+    "very_common": 22523
+  },
+  "stats": {
+    "cand": 1809541,
+    "coding_or_outside": 230358,
+    "low_an": 38262
+  },
+  "files": [
+    "gnomad.genomes.v4.1.sites.chr21.vcf.bgz",
+    "gnomad.genomes.v4.1.sites.chr22.vcf.bgz"
+  ],
+  "per_class": 150000,
+  "common_af": 0.01
+}

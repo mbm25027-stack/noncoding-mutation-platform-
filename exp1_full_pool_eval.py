@@ -151,9 +151,6 @@ def analyse(rows, args, out):
     if args.extra_scores:
         ids = [r["id"] for r in rows]
         with open(args.extra_scores, newline="", encoding="utf-8-sig") as fh:
-            ex = {d["id"]: d for d in csv.DictReader(fh, delimiter="\t" if "\t" in fh.readline() else ",")} \
-                if False else None
-        with open(args.extra_scores, newline="", encoding="utf-8-sig") as fh:
             head = fh.readline()
             fh.seek(0)
             ex = {d["id"]: d for d in csv.DictReader(fh, delimiter="\t" if "\t" in head else ",")}

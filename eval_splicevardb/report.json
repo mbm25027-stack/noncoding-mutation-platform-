@@ -1,0 +1,122 @@
+{
+  "svdb_file": "splicevardb_hg38.tsv",
+  "engine_build": "b276d0d44045",
+  "parse_drops": {
+    "low_frequency_class": 25601,
+    "not_snv_skipped": 1162,
+    "conflicting_class": 83
+  },
+  "strand_inferred": {
+    "minus": 11519,
+    "plus": 12350
+  },
+  "duplicates": 0,
+  "too_long": 0,
+  "calibration_size": 150,
+  "calibration_overlap": 1,
+  "scoring_status": {
+    "ok": 23869
+  },
+  "results": {
+    "HEADLINE: all SpliceVarDB, calibration overlap removed": {
+      "n": 23868,
+      "n_pos": 12593,
+      "n_neg": 11275,
+      "prevalence": 0.5276101893748952,
+      "tp": 5695,
+      "fp": 473,
+      "tn": 10802,
+      "fn": 6898,
+      "sensitivity": 0.45223536885571347,
+      "sens_ci95": [
+        0.44355838703561595,
+        0.4609414827188277
+      ],
+      "specificity": 0.9580487804878048,
+      "spec_ci95": [
+        0.9541896545552017,
+        0.9615958928976474
+      ],
+      "ppv": 0.9233138780804151,
+      "npv": 0.6102824858757062,
+      "accuracy": 0.6911764705882353,
+      "mcc": 0.46789542664844636,
+      "auroc_S_raw": 0.700027964009851
+    },
+    "chr12-22 only (the same chromosomes as your locked hold-out), overlap removed": {
+      "n": 9639,
+      "n_pos": 5072,
+      "n_neg": 4567,
+      "prevalence": 0.5261956634505655,
+      "tp": 2316,
+      "fp": 205,
+      "tn": 4362,
+      "fn": 2756,
+      "sensitivity": 0.45662460567823343,
+      "sens_ci95": [
+        0.44295413944438156,
+        0.47036072596864725
+      ],
+      "specificity": 0.95511276549157,
+      "spec_ci95": [
+        0.9487155114044441,
+        0.960745041417384
+      ],
+      "ppv": 0.9186830622768742,
+      "npv": 0.6128125878055634,
+      "accuracy": 0.6928104575163399,
+      "mcc": 0.46779976673051965,
+      "auroc_S_raw": 0.6995284543691922
+    },
+    "chr1-11 + X, overlap removed (thresholds were tuned on these chromosomes, so not chromosome-held-out)": {
+      "n": 14229,
+      "n_pos": 7521,
+      "n_neg": 6708,
+      "prevalence": 0.5285684166139574,
+      "tp": 3379,
+      "fp": 268,
+      "tn": 6440,
+      "fn": 4142,
+      "sensitivity": 0.4492753623188406,
+      "sens_ci95": [
+        0.43806234930018145,
+        0.4605401655600348
+      ],
+      "specificity": 0.9600477042337507,
+      "spec_ci95": [
+        0.9550916308802635,
+        0.9644771697040776
+      ],
+      "ppv": 0.926514943789416,
+      "npv": 0.6085806085806086,
+      "accuracy": 0.6900695762175838,
+      "mcc": 0.4680031542572669,
+      "auroc_S_raw": 0.7003841242136806
+    },
+    "reference only: all, overlap NOT removed": {
+      "n": 23869,
+      "n_pos": 12594,
+      "n_neg": 11275,
+      "prevalence": 0.5276299803091876,
+      "tp": 5696,
+      "fp": 473,
+      "tn": 10802,
+      "fn": 6898,
+      "sensitivity": 0.4522788629506114,
+      "sens_ci95": [
+        0.44360213884879884,
+        0.4609846902576758
+      ],
+      "specificity": 0.9580487804878048,
+      "spec_ci95": [
+        0.9541896545552017,
+        0.9615958928976474
+      ],
+      "ppv": 0.9233263089641757,
+      "npv": 0.6102824858757062,
+      "accuracy": 0.691189408856676,
+      "mcc": 0.4679256771162084,
+      "auroc_S_raw": 0.7000510608120504
+    }
+  }
+}

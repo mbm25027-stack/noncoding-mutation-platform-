@@ -27,6 +27,7 @@ chl_sccc_2023/
 coad_silu_2022/
 lihc_tcga_pan_can_atlas_2018*/
 clinical.cart.*/
+files (1)/
 
 # Data and model file extensions
 *.gtf
@@ -44,11 +45,17 @@ clinical.cart.*/
 *.npy
 *.h5
 *.gz
+*.bgz
+*.tar
 *.zip
+*.probemap
+*.vcf
+*.vcf.gz
 
 # Installers, binaries, downloaded tools
 *.exe
 *.msi
+*.dll
 *.bb
 *.bw
 
@@ -62,12 +69,5 @@ gdc_*
 October_*
 GRCh38*
 ENCFF*
-# Ignore raw multi-hundred-MB ClinVar dumps
+gencode.*
 clinvar.vcf
-*.vcf.gz
-
-
-files (1)/
-
-
-*.vcf

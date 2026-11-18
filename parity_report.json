@@ -1,0 +1,63 @@
+{
+  "base_url": "http://127.0.0.1:8001",
+  "checks": {
+    "health 200": {
+      "ok": true,
+      "detail": "(status 200)"
+    },
+    "/version 200": {
+      "ok": true,
+      "detail": "(status 200)"
+    },
+    "version.git_tag matches RELEASE.json": {
+      "ok": true,
+      "detail": "(live v3.3.0)"
+    },
+    "version.core hash matches pin": {
+      "ok": true,
+      "detail": "(live b276d0d44045)"
+    },
+    "version.build_verified true": {
+      "ok": true,
+      "detail": ""
+    },
+    "golden file made on this core": {
+      "ok": true,
+      "detail": ""
+    },
+    "replay dev (n=150)": {
+      "ok": true,
+      "detail": "(score mismatches 0, call mismatches 0, errors 0)"
+    },
+    "replay blind (n=50)": {
+      "ok": true,
+      "detail": "(score mismatches 0, call mismatches 0, errors 0)"
+    }
+  },
+  "sets": {
+    "dev": {
+      "n": 150,
+      "score_mismatch": 0,
+      "call_mismatch": 0,
+      "errors": 0,
+      "live_confusion": {
+        "tp": 30,
+        "fp": 8,
+        "tn": 67,
+        "fn": 45
+      }
+    },
+    "blind": {
+      "n": 50,
+      "score_mismatch": 0,
+      "call_mismatch": 0,
+      "errors": 0,
+      "live_confusion": {
+        "tp": 11,
+        "fp": 0,
+        "tn": 25,
+        "fn": 14
+      }
+    }
+  }
+}

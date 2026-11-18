@@ -1,0 +1,12 @@
+{
+  "title": "NC-MutScan v3.3: frozen release",
+  "upload_type": "software",
+  "description": "Frozen NC-MutScan v3.3 engine for noncoding variant effect scoring, with live-API parity tests and release metadata. Core SHA-256 b276d0d440453bf0c1c98647f8825b039a8775738b483fa4aad8cb1119edb2c4.",
+  "creators": [
+    {"name": "Biswas, Shiladitya", "affiliation": "AFFILIATION"},
+    {"name": "Basu, FIRST NAME", "affiliation": "AFFILIATION"}
+  ],
+  "license": "LICENSE-ID",
+  "access_right": "open",
+  "keywords": ["noncoding variants", "splicing", "variant effect prediction"]
+}

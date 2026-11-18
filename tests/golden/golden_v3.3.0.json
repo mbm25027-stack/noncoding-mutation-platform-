@@ -1,0 +1,2017 @@
+{
+ "meta": {
+  "release": "v3.3.0",
+  "core_sha256": "b276d0d440453bf0c1c98647f8825b039a8775738b483fa4aad8cb1119edb2c4",
+  "flank_bp": 25,
+  "generated_by": "make_golden.py",
+  "blind_seed": 20261118,
+  "blind_n": 50,
+  "skipped": 0,
+  "counts": {
+   "dev": 150,
+   "blind": 50
+  }
+ },
+ "records": [
+  {
+   "id": "dev:11:5226925:C>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TTAAACCTGTCTTGTAACCTTGATACCAACCTGCCCAGGGCCTCACCACCA",
+   "mut_seq": "TTAAACCTGTCTTGTAACCTTGATATCAACCTGCCCAGGGCCTCACCACCA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:47790925:A>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "AAGTTATGTATTTCCTTTTGGCAACAGTTGTGACTTCTCACCAGGAGATTT",
+   "mut_seq": "AAGTTATGTATTTCCTTTTGGCAACTGTTGTGACTTCTCACCAGGAGATTT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:1:63402348:G>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TAGTCTCCTATGTGCATATGTGTAAGTTTTTCTTTCTTAATGTAACTCTAA",
+   "mut_seq": "TAGTCTCCTATGTGCATATGTGTAAATTTTTCTTTCTTAATGTAACTCTAA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:3:93973788:G>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "GAGGCGCCGGCAGGGACGGTGGCGCGTCGCGGCGGGGACCGGAGCGCTAGG",
+   "mut_seq": "GAGGCGCCGGCAGGGACGGTGGCGCATCGCGGCGGGGACCGGAGCGCTAGG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:3:37008906:G>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "GGAAAATTTTGGAAGTTGTTGGCAGGTACAGTCCAAAATCTGGGAGTGGGT",
+   "mut_seq": "GGAAAATTTTGGAAGTTGTTGGCAGATACAGTCCAAAATCTGGGAGTGGGT",
+   "S_raw": 5.83,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:3:10085804:TTCCTTAGGAGTGGA>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "CTAAGCTAACCCCTCTTACCTTGACTTCCTTAGGAGTGGATTTTCTCAACCTGAAAATCAGAATT",
+   "mut_seq": "CTAAGCTAACCCCTCTTACCTTGACTTTTTCTCAACCTGAAAATCAGAATT",
+   "S_raw": 4.7,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:2:121531003:G>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TTGCTTTATTTTGGTGCAATTTTTGGAAAAATGAAAACCTGTTTTCATAGA",
+   "mut_seq": "TTGCTTTATTTTGGTGCAATTTTTGTAAAAATGAAAACCTGTTTTCATAGA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:11:134142030:G>C",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "GTCCCTCCTTTGCCTCTTATTTTTGGAGTGATGGAAATGTTCTTCTCAGAA",
+   "mut_seq": "GTCCCTCCTTTGCCTCTTATTTTTGCAGTGATGGAAATGTTCTTCTCAGAA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:47407923:T>G",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "AATTTTGAATTAATGCTGAAATGAGTTAAGGCTTTGGGGGACTGTTGGGAA",
+   "mut_seq": "AATTTTGAATTAATGCTGAAATGAGGTAAGGCTTTGGGGGACTGTTGGGAA",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Driver Variant"
+  },
+  {
+   "id": "dev:11:66523722:AG>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "CCACAGACGCTGGCTGTTCCCTGCCAGGGGAAGAAGCTGTGGACAGTGCAGA",
+   "mut_seq": "CCACAGACGCTGGCTGTTCCCTGCCAGGGAAGAAGCTGTGGACAGTGCAGA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:9:78328050:G>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "GCTGGAATAATAAACATGTTTTTCAGTTGTCCAGTGGAGCCCCAAAATAGA",
+   "mut_seq": "GCTGGAATAATAAACATGTTTTTCATTTGTCCAGTGGAGCCCCAAAATAGA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:1:244858724:C>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TTTATACATAGAAAGTTAGCTTTAACTTACAGCAAAACATGTAATCACATC",
+   "mut_seq": "TTTATACATAGAAAGTTAGCTTTAATTTACAGCAAAACATGTAATCACATC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:10:54089983:C>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "AAAGTAGGAAATCATTTTTAACTTACGTTTCTGAAAGATTAAAAACTCTCT",
+   "mut_seq": "AAAGTAGGAAATCATTTTTAACTTAAGTTTCTGAAAGATTAAAAACTCTCT",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:6:145735197:C>G",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "CGGGGGCAGGCGTCTGCTGGCAATACCTTCCCAGGAGAGCTCTCCTCCCGG",
+   "mut_seq": "CGGGGGCAGGCGTCTGCTGGCAATAGCTTCCCAGGAGAGCTCTCCTCCCGG",
+   "S_raw": 2.89,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:1:94010795:C>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "CCACTGGCCCAGGGTGTGGCATGGACGTACCATTGGGAGAGGAAGAAGTGG",
+   "mut_seq": "CCACTGGCCCAGGGTGTGGCATGGATGTACCATTGGGAGAGGAAGAAGTGG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:1:92833542:CA>C",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "CCTTTCTACAATTATTTTTTTCTTTCAGAGGGTAAAACTGATTATTATGCTC",
+   "mut_seq": "CCTTTCTACAATTATTTTTTTCTTTCGAGGGTAAAACTGATTATTATGCTC",
+   "S_raw": 2.87,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:2:27226320:G>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TGCCTTGAACCCTGAGTCTGAGCAGGTAAGCTCTAGGCCCTGGAACTGATA",
+   "mut_seq": "TGCCTTGAACCCTGAGTCTGAGCAGATAAGCTCTAGGCCCTGGAACTGATA",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:2:238338458:G>C",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "CAGGAAACGACAACATCAGAAATAGGTAAGAAAAATATATTCTTTAGTTTA",
+   "mut_seq": "CAGGAAACGACAACATCAGAAATAGCTAAGAAAAATATATTCTTTAGTTTA",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:3:25720013:C>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "GATTAATTCTCCAGGCAAATGCTTACCGCCTGTCAGTTCTACTTGTGCTGT",
+   "mut_seq": "GATTAATTCTCCAGGCAAATGCTTATCGCCTGTCAGTTCTACTTGTGCTGT",
+   "S_raw": 5.45,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:8:60845064:G>C",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "ACTCGAGCCTTGGTCAACCATTCCGGTAGGTCTCCACCATGCTGTTTGTGC",
+   "mut_seq": "ACTCGAGCCTTGGTCAACCATTCCGCTAGGTCTCCACCATGCTGTTTGTGC",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:10:86899891:G>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "CCCACACTGCCCCCTGTTGTCATAGGTAGGTTAGCCGAGAAAAGTCGGAGC",
+   "mut_seq": "CCCACACTGCCCCCTGTTGTCATAGTTAGGTTAGCCGAGAAAAGTCGGAGC",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:1:68448708:T>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TAACCACCAGCAGGATGCTCAACCCTGAAATGGTGGAAGAATAAGGAAGAA",
+   "mut_seq": "TAACCACCAGCAGGATGCTCAACCCAGAAATGGTGGAAGAATAAGGAAGAA",
+   "S_raw": 3.37,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:9:127666301:G>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TATCGAAAATGATGTATACAAGTAAGTATAGTGTTACAGACCCCAGAGTGT",
+   "mut_seq": "TATCGAAAATGATGTATACAAGTAAATATAGTGTTACAGACCCCAGAGTGT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:210677139:A>G",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TCCCTCTCCTCACTAATTTTCAGGTATAGTCTTTTCCTTGGATATAGACTG",
+   "mut_seq": "TCCCTCTCCTCACTAATTTTCAGGTGTAGTCTTTTCCTTGGATATAGACTG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:11:108333970:T>G",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "GTTGTCCCTACTATGGAAATTAAGGTAATTTGCAATTAACTCTTGATTTTT",
+   "mut_seq": "GTTGTCCCTACTATGGAAATTAAGGGAATTTGCAATTAACTCTTGATTTTT",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:11:31801555:ACTTACG>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "CAGGGAGGGCAGATGTTCTCAATGAACTTACGCTTGGTATGTTATCGTTGGTACAGA",
+   "mut_seq": "CAGGGAGGGCAGATGTTCTCAATGAACTTGGTATGTTATCGTTGGTACAGA",
+   "S_raw": 4.94,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:11:108316010:G>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "GCTATTTTCACAATCTTTTCTTATAGACTACGAACATATGAACACGAAGCA",
+   "mut_seq": "GCTATTTTCACAATCTTTTCTTATAAACTACGAACATATGAACACGAAGCA",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:9:78240369:G>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TTGGAGATGGAGGTTTAGAAAGTGAGTTTAAATCTCATTTAACTCTTGTCC",
+   "mut_seq": "TTGGAGATGGAGGTTTAGAAAGTGAATTTAAATCTCATTTAACTCTTGTCC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:6:131583492:G>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "ATCACAGAAGAAATCTACAAAACAGGTAGTTAACAATCTGAGGTAATAGAG",
+   "mut_seq": "ATCACAGAAGAAATCTACAAAACAGATAGTTAACAATCTGAGGTAATAGAG",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:3:4410860:C>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "CAAGACACATGCTCTGTGAATAATACTCACTGGGTTAAGCGTTTCTTCAAC",
+   "mut_seq": "CAAGACACATGCTCTGTGAATAATAATCACTGGGTTAAGCGTTTCTTCAAC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:7:45069962:G>C",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "ACCCACCACCTGTCCCTGCACAGCGGTATGTTGAGTGAGAGTGGGCAGCGG",
+   "mut_seq": "ACCCACCACCTGTCCCTGCACAGCGCTATGTTGAGTGAGAGTGGGCAGCGG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:10:49538959:C>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "CATTCGGCCGGGACCCCCGAACACTCACCCAGGGCCGCGCGAGCGCCCACA",
+   "mut_seq": "CATTCGGCCGGGACCCCCGAACACTAACCCAGGGCCGCGCGAGCGCCCACA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:3:121799375:C>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TCTTCCTATTCTGAGTAAATCACCACTAATAGAACAAAATAAAAAAAAAAG",
+   "mut_seq": "TCTTCCTATTCTGAGTAAATCACCATTAATAGAACAAAATAAAAAAAAAAG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:1:21561213:G>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "GTTCCCCTTCGTGGCCCTCTCCAAGGTGAGCCCCATCCCCAAGCCCAGTTC",
+   "mut_seq": "GTTCCCCTTCGTGGCCCTCTCCAAGTTGAGCCCCATCCCCAAGCCCAGTTC",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:2:173209831:TGGA>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "CTCATTCCTACACAACAAGGCGGAGTGGAGGTGGGTAGCCCCGACAGCAGGCCA",
+   "mut_seq": "CTCATTCCTACACAACAAGGCGGAGTGGTGGGTAGCCCCGACAGCAGGCCA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:11:108310159:G>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TGACATTATATCTCATTTTTCTTTAGACCTTCTTCAGGAACAATTTTTAAT",
+   "mut_seq": "TGACATTATATCTCATTTTTCTTTATACCTTCTTCAGGAACAATTTTTAAT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:6:152511592:C>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TAACCGGTGATCCTCTGTGCATGGACTGACATGAAAAACAAAGGGAGAAGA",
+   "mut_seq": "TAACCGGTGATCCTCTGTGCATGGAATGACATGAAAAACAAAGGGAGAAGA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:5:37227481:T>TAG",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "ATTAAAAATTCTATAGACAACTGTATACAATTCAAGGACATTATTGTCAGT",
+   "mut_seq": "ATTAAAAATTCTATAGACAACTGTATAGACAATTCAAGGACATTATTGTCAGT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:3:121795456:C>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TCAATCCCCTCACCAAATTTTTTTACCTGAAACTCCTCTGCAAAGCAATCA",
+   "mut_seq": "TCAATCCCCTCACCAAATTTTTTTAACTGAAACTCCTCTGCAAAGCAATCA",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:2:166056406:C>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TATGTTATTAAAAATATAAGTTGAACTTACTCTACATTCTTTGTCCAATCA",
+   "mut_seq": "TATGTTATTAAAAATATAAGTTGAATTTACTCTACATTCTTTGTCCAATCA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:232334501:T>G",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "CTCTTCTTTGCTGTTCTGGTCAAGGTGAGCCCTCCAGCCTGGTGCCCCTCA",
+   "mut_seq": "CTCTTCTTTGCTGTTCTGGTCAAGGGGAGCCCTCCAGCCTGGTGCCCCTCA",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:5:36995809:G>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "ATAGTGATGAAGCTTTTGAATGTAAGTATCACAGAACTCTTTGTTATTATT",
+   "mut_seq": "ATAGTGATGAAGCTTTTGAATGTAAATATCACAGAACTCTTTGTTATTATT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:47378939:A>G",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TATTAGTATTAATTTGTATTATTCAATTTTTTTCCCCAGTATGAGAATAAT",
+   "mut_seq": "TATTAGTATTAATTTGTATTATTCAGTTTTTTTCCCCAGTATGAGAATAAT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:26480198:C>G",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "GCCCGAAGCCCCCGTGGGCCCAGCACTCACCTATGGTGACCTCAAAGGTGA",
+   "mut_seq": "GCCCGAAGCCCCCGTGGGCCCAGCAGTCACCTATGGTGACCTCAAAGGTGA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:5:138810036:A>G",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "GAGTTTGTTTTTCATTCTGTAAAACAGGTGATTTGATGAAGGCTGCTGCAG",
+   "mut_seq": "GAGTTTGTTTTTCATTCTGTAAAACGGGTGATTTGATGAAGGCTGCTGCAG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:32143128:C>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "AAAACTTTTTTAGAAATTAACCAGGCATGGTGGCACGTGCCTTTGGTCCCA",
+   "mut_seq": "AAAACTTTTTTAGAAATTAACCAGGTATGGTGGCACGTGCCTTTGGTCCCA",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Driver Variant"
+  },
+  {
+   "id": "dev:5:87379855:G>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "GGCTTCAGAAATACTTCCACCGTAAGTGGTGAAATTTTCATTTGACAAGAA",
+   "mut_seq": "GGCTTCAGAAATACTTCCACCGTAAATGGTGAAATTTTCATTTGACAAGAA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:5:60918390:T>C",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TATCTGTGAACATCAGGATGATCTCTACAAAACAGCAATCAAAATTTACAT",
+   "mut_seq": "TATCTGTGAACATCAGGATGATCTCCACAAAACAGCAATCAAAATTTACAT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:10:86917132:AG>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TCAAACCTTTTACTTTTTTCTATAAAGGTTCAGCGAACTATTGCCAAACAGA",
+   "mut_seq": "TCAAACCTTTTACTTTTTTCTATAAAGTTCAGCGAACTATTGCCAAACAGA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:3:45827460:C>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TTTGCTGAAATTTCTTTTCTAATTCCTGCTTAGTAAAAAATGTCAGCCCAT",
+   "mut_seq": "TTTGCTGAAATTTCTTTTCTAATTCTTGCTTAGTAAAAAATGTCAGCCCAT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:1:102970275:G>C",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "AGCCCATCCTTCCCAGGTGGTCCCTGAAATTACAAATATTAAATACCACAT",
+   "mut_seq": "AGCCCATCCTTCCCAGGTGGTCCCTCAAATTACAAATATTAAATACCACAT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:11:112088866:G>C",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TTTTATGAATCTGGTCCTTTTTGTAGCTGGCTCCAAGGCTGCATCTCTCCA",
+   "mut_seq": "TTTTATGAATCTGGTCCTTTTTGTACCTGGCTCCAAGGCTGCATCTCTCCA",
+   "S_raw": 5.19,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:7:92504903:C>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TTTTGTATGTTTTCAAGCCTTTTTCCTTAATACAGAAGATATGAAATGGTT",
+   "mut_seq": "TTTTGTATGTTTTCAAGCCTTTTTCATTAATACAGAAGATATGAAATGGTT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:9:34636996:C>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TTCTCTGACAGAGCCTTCTTACCCACCTGGGTAGAAGACCTCACTTTTGGT",
+   "mut_seq": "TTCTCTGACAGAGCCTTCTTACCCATCTGGGTAGAAGACCTCACTTTTGGT",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:2:71568343:G>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "GTTCGTGTGTCCGGAGAAGACGTGAGTCGTGGGCAGGGAGGGCTGGGGAGA",
+   "mut_seq": "GTTCGTGTGTCCGGAGAAGACGTGAATCGTGGGCAGGGAGGGCTGGGGAGA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:5:132638214:TGGACAAAAGGCA>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TGGATATGCGAGGACGATGCAGTGCTGGACAAAAGGCAGGTATCTCAAAAGCCTGGGGAGCCA",
+   "mut_seq": "TGGATATGCGAGGACGATGCAGTGCTGGTATCTCAAAAGCCTGGGGAGCCA",
+   "S_raw": 8.21,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:1:215782735:T>C",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TATTTGTATTTTAAAGGTATCTCAATACCATTTGATTGTATAGGTTTTCTC",
+   "mut_seq": "TATTTGTATTTTAAAGGTATCTCAACACCATTTGATTGTATAGGTTTTCTC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:9:95506602:G>C",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "GCTTTCCGGCCAGTAGCCTTCCCCTGGGGACGAAGCAGAAGGGAGGAGTGA",
+   "mut_seq": "GCTTTCCGGCCAGTAGCCTTCCCCTCGGGACGAAGCAGAAGGGAGGAGTGA",
+   "S_raw": 3.51,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:3:180650140:T>C",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "AAGAAGTAGAGTCAGGTCACACTTATAGTTCACACTTATAGTTCACTTTGA",
+   "mut_seq": "AAGAAGTAGAGTCAGGTCACACTTACAGTTCACACTTATAGTTCACTTTGA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:11:680962:C>G",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "CTAGAGCTGTGTTTTCTCAAACTCACAGGTGGTAGCCGCGGTGGCTGGAAG",
+   "mut_seq": "CTAGAGCTGTGTTTTCTCAAACTCAGAGGTGGTAGCCGCGGTGGCTGGAAG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "AID/SHM Passenger"
+  },
+  {
+   "id": "dev:10:97600165:T>G",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TTCTGATGGCCAGCTATGCCTTGGGTAGGCCGCCCACTGCTCTCAAATTGT",
+   "mut_seq": "TTCTGATGGCCAGCTATGCCTTGGGGAGGCCGCCCACTGCTCTCAAATTGT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:5:88823814:G>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "AGTCCCCGTTTTTCTTCTCTCTCTCGTCCCTGAAATTATGTATTTTTTCCT",
+   "mut_seq": "AGTCCCCGTTTTTCTTCTCTCTCTCATCCCTGAAATTATGTATTTTTTCCT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:9:134795057:T>G",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "CAGGGCCGGGCATTTAGAGAGTGACTGACCAGCCCCTTCTCTGATTCTAGG",
+   "mut_seq": "CAGGGCCGGGCATTTAGAGAGTGACGGACCAGCCCCTTCTCTGATTCTAGG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:189086721:C>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "CAGCATGTAATTAATTATAAAGAGACTTACTTGCTGTCCTTGTAAACCCTG",
+   "mut_seq": "CAGCATGTAATTAATTATAAAGAGAATTACTTGCTGTCCTTGTAAACCCTG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:11:108321298:TAGAGTA>T",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "CAGAGTGTCTTTTCTTTTTTGCTACTAGAGTAAAAGAAGTGGAAGAGATGTGTAAGC",
+   "mut_seq": "CAGAGTGTCTTTTCTTTTTTGCTACTAAAGAAGTGGAAGAGATGTGTAAGC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:1:183574622:C>G",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "ACATGAAAGCAATGTTATATAACACCTAGAAAAGTACAGACCGCAACATAA",
+   "mut_seq": "ACATGAAAGCAATGTTATATAACACGTAGAAAAGTACAGACCGCAACATAA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:1:119076349:C>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TCTCAGTTCTAATCTGAGAAGCTGACCTGAGATTGTTGGAAAAGGATGCTT",
+   "mut_seq": "TCTCAGTTCTAATCTGAGAAGCTGAACTGAGATTGTTGGAAAAGGATGCTT",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:11:47350009:C>G",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "CCAATGCTGGGCACAGCAGCTCACACTCACCCACGGTCACCTCGCCATCCT",
+   "mut_seq": "CCAATGCTGGGCACAGCAGCTCACAGTCACCCACGGTCACCTCGCCATCCT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:3:11313423:A>G",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "ATCAAAGGTTTTCACTAAAACAGGTATCAACAAATAACCAAAATGCACATA",
+   "mut_seq": "ATCAAAGGTTTTCACTAAAACAGGTGTCAACAAATAACCAAAATGCACATA",
+   "S_raw": 4.07,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:3:158691138:G>C",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "AAAATATCTACTATGTTTGTTTTCAGGTCCCTCTAAATGATATGTTTGGTT",
+   "mut_seq": "AAAATATCTACTATGTTTGTTTTCACGTCCCTCTAAATGATATGTTTGGTT",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:1:216000397:AC>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "AGCATGTGAGAGAGACAACATTTCTACTTACTGTATGTGTATAGTTCTAGAA",
+   "mut_seq": "AGCATGTGAGAGAGACAACATTTCTATTACTGTATGTGTATAGTTCTAGAA",
+   "S_raw": 3.68,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:3:25739572:C>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "TATTCTGATTTTACCATCCAGGGCACCCACCTTGGGAATCGATTGCTGAAC",
+   "mut_seq": "TATTCTGATTTTACCATCCAGGGCAACCACCTTGGGAATCGATTGCTGAAC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:44332457:A>G",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "GCTGAAAGTGAAGATTATAAGACCTACCTTGCTTTTGGCTTCTAGACGTAA",
+   "mut_seq": "GCTGAAAGTGAAGATTATAAGACCTGCCTTGCTTTTGGCTTCTAGACGTAA",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:5:138810037:G>A",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "AGTTTGTTTTTCATTCTGTAAAACAGGTGATTTGATGAAGGCTGCTGCAGG",
+   "mut_seq": "AGTTTGTTTTTCATTCTGTAAAACAAGTGATTTGATGAAGGCTGCTGCAGG",
+   "S_raw": 3.28,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:3:121797229:T>C",
+   "set": "dev",
+   "label": 1,
+   "wt_seq": "GTTTACTTAGTAGACGTCTGAGTCCTGAAATGGAATAGCAAAAGGTACAAC",
+   "mut_seq": "GTTTACTTAGTAGACGTCTGAGTCCCGAAATGGAATAGCAAAAGGTACAAC",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:9:16870639:T>G",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "ATAAAAGAGGAAGGAGGGTGGAAACTTCTTACCATCTCGGCATGCTGGTTG",
+   "mut_seq": "ATAAAAGAGGAAGGAGGGTGGAAACGTCTTACCATCTCGGCATGCTGGTTG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:6:162727652:A>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CGCAGAGAGGCTGTACCTGGCAGGTACCCACGTACCTATCATGGTCACTGG",
+   "mut_seq": "CGCAGAGAGGCTGTACCTGGCAGGTCCCCACGTACCTATCATGGTCACTGG",
+   "S_raw": 3.11,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:2:210656503:CTT>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "GTACCTGAAAACTTTTTCTAAAATCCTTTTTTTTTTTTTTTGGCCAGGTTATC",
+   "mut_seq": "GTACCTGAAAACTTTTTCTAAAATCCTTTTTTTTTTTTTGGCCAGGTTATC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:7:16215814:C>T",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "AAAATCATACTTTTATTTGATAAACCTGACAGTTCTATTTGGGATACCTAA",
+   "mut_seq": "AAAATCATACTTTTATTTGATAAACTTGACAGTTCTATTTGGGATACCTAA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:6:129252061:ATTTC>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CCTCTTTTCAGTTTTACTCTTTTTTATTTCTTTTTTTTCCCCCTTTAGGGTAATG",
+   "mut_seq": "CCTCTTTTCAGTTTTACTCTTTTTTATTTTTTTTCCCCCTTTAGGGTAATG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:3:58077034:T>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CCCAAAGGAATGACCAAGCCTGTGCTTCTCTCCCCAGATAGCAAAGCCATT",
+   "mut_seq": "CCCAAAGGAATGACCAAGCCTGTGCCTCTCTCCCCAGATAGCAAAGCCATT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:4:153322520:T>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CAAGACAGAAGTTCATTGTGATATATGAGTAGCTGTGTACCCGTTTGAACC",
+   "mut_seq": "CAAGACAGAAGTTCATTGTGATATACGAGTAGCTGTGTACCCGTTTGAACC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:1:211082762:C>T",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CCCTAAAAGTGAGGCTCAAGATGAGCTAACCCTTTGCCCTTACCTCTGCCA",
+   "mut_seq": "CCCTAAAAGTGAGGCTCAAGATGAGTTAACCCTTTGCCCTTACCTCTGCCA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "AID/SHM Passenger"
+  },
+  {
+   "id": "dev:2:227103124:AAG>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "GTACATCACACAAATGAAAAAAAAAAAGGTACTTAAATAAACTACCTTGCGTC",
+   "mut_seq": "GTACATCACACAAATGAAAAAAAAAAGTACTTAAATAAACTACCTTGCGTC",
+   "S_raw": 3.28,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:10:103077214:C>T",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "GGCTGCACCCGCCCAGGCCCGCACCCGCCCAGTCCCGAGGGCCCGGCCCTG",
+   "mut_seq": "GGCTGCACCCGCCCAGGCCCGCACCTGCCCAGTCCCGAGGGCCCGGCCCTG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:4:16024371:C>T",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TATATTTGATTTGCTGAAAAAAGAACATTCTGTGAAACCTCCCCTTCTAAG",
+   "mut_seq": "TATATTTGATTTGCTGAAAAAAGAATATTCTGTGAAACCTCCCCTTCTAAG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:214730187:G>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TTACCTCAGATTCTGAAAGGTTTATGGCAATGTTCAAGATGCCAAAAATCC",
+   "mut_seq": "TTACCTCAGATTCTGAAAGGTTTATAGCAATGTTCAAGATGCCAAAAATCC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:9:77321474:T>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TTTACACATTTCATTTTATTTAGCATAACTCTTTCTTATTAGGCATTTACA",
+   "mut_seq": "TTTACACATTTCATTTTATTTAGCACAACTCTTTCTTATTAGGCATTTACA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:7:47875945:T>G",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "GATATTACTAATGTTCTTTCTGCACTAAAAGGTAGATAATAAACCTAAACT",
+   "mut_seq": "GATATTACTAATGTTCTTTCTGCACGAAAAGGTAGATAATAAACCTAAACT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:4:183694593:T>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "AATACTAATTAAATTACAACATTTATTTTGTTACAGCTGGAAAAAATGTTG",
+   "mut_seq": "AATACTAATTAAATTACAACATTTACTTTGTTACAGCTGGAAAAAATGTTG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:11:22211254:G>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "AATAATAGCATTATATCTTCCCCTGGTACTGTTAGCAGAGCCTGAGCAGCA",
+   "mut_seq": "AATAATAGCATTATATCTTCCCCTGATACTGTTAGCAGAGCCTGAGCAGCA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:3:128910489:G>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CCAGGATCTCTGCCTGCACTTTCCAGAGCACCTGCAGATACCAGGATTGTG",
+   "mut_seq": "CCAGGATCTCTGCCTGCACTTTCCAAAGCACCTGCAGATACCAGGATTGTG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:6:24528186:G>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TATCAAGTAAGATCCTCCAGCCAGCGGGGAGATGGGAGGAAGAATAGAAGA",
+   "mut_seq": "TATCAAGTAAGATCCTCCAGCCAGCAGGGAGATGGGAGGAAGAATAGAAGA",
+   "S_raw": 4.07,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:1:161783974:C>T",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TTATTGTCCAGTGGGTAAAACCTTTCCTCCATGTTTTCCAGTTAAAGATAT",
+   "mut_seq": "TTATTGTCCAGTGGGTAAAACCTTTTCTCCATGTTTTCCAGTTAAAGATAT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:3:165067511:G>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "AGTAATCTGGAAAGATTTAAGCAAGGTAGCATTACTGGATTCTAAACTATT",
+   "mut_seq": "AGTAATCTGGAAAGATTTAAGCAAGCTAGCATTACTGGATTCTAAACTATT",
+   "S_raw": 5.79,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:1:62578970:C>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TTCTTCATGAAAATCAGGAGACCTTCATACAAAAAAAAAAAAAAATCAACA",
+   "mut_seq": "TTCTTCATGAAAATCAGGAGACCTTAATACAAAAAAAAAAAAAAATCAACA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:5:157341063:C>T",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TTAACTCTTTCCCATCCCTATGCTTCTACTAGTTTTGTGCGGACTGCCATT",
+   "mut_seq": "TTAACTCTTTCCCATCCCTATGCTTTTACTAGTTTTGTGCGGACTGCCATT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:7:116795650:A>G",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CCTCATCTGTCCTGTTTCTTGTTTTACTAGTGGTCCTTTGGCGTGCTCCTC",
+   "mut_seq": "CCTCATCTGTCCTGTTTCTTGTTTTGCTAGTGGTCCTTTGGCGTGCTCCTC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:4:158697555:T>TA",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "ACTTTTTTGTTTGCTTTTTTTTTTTTTAGTTATGGGTTATTGATGAAAAGA",
+   "mut_seq": "ACTTTTTTGTTTGCTTTTTTTTTTTTATAGTTATGGGTTATTGATGAAAAGA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:1:200600123:G>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CTTTTCTTTCCACACTCTTTCCAAAGACAAAGAAAATAACAGAGTTAAAAA",
+   "mut_seq": "CTTTTCTTTCCACACTCTTTCCAAAAACAAAGAAAATAACAGAGTTAAAAA",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:3:64094813:G>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "AAAGAAATGTACCTCAAAAGGTGGCGATCTGAAACTGCCTTCAACAATTGG",
+   "mut_seq": "AAAGAAATGTACCTCAAAAGGTGGCAATCTGAAACTGCCTTCAACAATTGG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:11:64805628:C>T",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "GCTGGACACAGGCTGGAGCTCCAGCCTTTCACCTGGCTTTGCTCCCCCGGC",
+   "mut_seq": "GCTGGACACAGGCTGGAGCTCCAGCTTTTCACCTGGCTTTGCTCCCCCGGC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "AID/SHM Passenger"
+  },
+  {
+   "id": "dev:5:156760502:G>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TCTTCTTATATATTTTTTCAGTGCCGGGATATTCATATTCCTAAAGCCACT",
+   "mut_seq": "TCTTCTTATATATTTTTTCAGTGCCAGGATATTCATATTCCTAAAGCCACT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:3:71774712:G>T",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "AGTCATGTTCACCACTGGATTAATAGAGACTTGTGCTCAGAATGGTTCTGT",
+   "mut_seq": "AGTCATGTTCACCACTGGATTAATATAGACTTGTGCTCAGAATGGTTCTGT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:10:12100275:T>TTTTTTTTCTG",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TTACTTGCTCAAGGTAAGAATTTTCTTTTTTTTTTCTGTTTTTTTTTTTTT",
+   "mut_seq": "TTACTTGCTCAAGGTAAGAATTTTCTTTTTTTTCTGTTTTTTTTTCTGTTTTTTTTTTTTT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:7:103515177:T>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TGGGCTTTTTATTTAGCGCTGTGCATAATTTACCTGAAGTTTTGTCTTCCA",
+   "mut_seq": "TGGGCTTTTTATTTAGCGCTGTGCAAAATTTACCTGAAGTTTTGTCTTCCA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:9:36846831:G>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "GGCCCAAGGGCCCCGCAGGGCCTCCGCCAGTACTCACCAAGCAGCCCCGGG",
+   "mut_seq": "GGCCCAAGGGCCCCGCAGGGCCTCCACCAGTACTCACCAAGCAGCCCCGGG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:173191184:T>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CACATATTCCTATGGTGTGGTGAGTTCATTTCTCATTTCTTGTTTACTAAG",
+   "mut_seq": "CACATATTCCTATGGTGTGGTGAGTCCATTTCTCATTTCTTGTTTACTAAG",
+   "S_raw": 4.07,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:4:128948476:T>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TTTGCAGTTGGGTTTTAGGTAGTTATATTTCCTTTTTCTTTTTACCTTTTC",
+   "mut_seq": "TTTGCAGTTGGGTTTTAGGTAGTTACATTTCCTTTTTCTTTTTACCTTTTC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:169186026:G>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TCATGGCATTCATTAATGCCTGTAGGTAAAAAGCAGTTCTTAGAGATCCTA",
+   "mut_seq": "TCATGGCATTCATTAATGCCTGTAGATAAAAAGCAGTTCTTAGAGATCCTA",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:4:39217963:T>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TTACTCAAATAAATCTGTGAGCCATTATTATTCTTTACGTTTTAGATAGAA",
+   "mut_seq": "TTACTCAAATAAATCTGTGAGCCATCATTATTCTTTACGTTTTAGATAGAA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:11:46896341:G>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CAAGGCACATTGGGGGCTTCCTAGAGAGATGGAGGGTCAGGTCATAGCAAG",
+   "mut_seq": "CAAGGCACATTGGGGGCTTCCTAGACAGATGGAGGGTCAGGTCATAGCAAG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:10:116547278:T>G",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "GAGCATGTTTGTAAAACTAATATCCTTCTGGGGGATTGCAGGAAAAGAAGT",
+   "mut_seq": "GAGCATGTTTGTAAAACTAATATCCGTCTGGGGGATTGCAGGAAAAGAAGT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:4:121848940:T>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CTTTCAGACAACATCTAAAAAAGTTTAAGACCAAGCACTTCATTAGTAACT",
+   "mut_seq": "CTTTCAGACAACATCTAAAAAAGTTCAAGACCAAGCACTTCATTAGTAACT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:11:103283103:T>G",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CATTAAAGGTATTCCTTTTCTACTATGAGACATGTTTTAATTTCTTCTGTA",
+   "mut_seq": "CATTAAAGGTATTCCTTTTCTACTAGGAGACATGTTTTAATTTCTTCTGTA",
+   "S_raw": 4.53,
+   "call": 1,
+   "classification": "Driver Variant"
+  },
+  {
+   "id": "dev:8:60845083:T>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "ATTCCGGTAGGTCTCCACCATGCTGTTTGTGCTACAGGGTCACAAAGCCAC",
+   "mut_seq": "ATTCCGGTAGGTCTCCACCATGCTGATTGTGCTACAGGGTCACAAAGCCAC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:11:103171270:T>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TCCTACTTTCATTATTCTTTTTTTTTGGGGGACAGAGTTTTGCTCTTGTTG",
+   "mut_seq": "TCCTACTTTCATTATTCTTTTTTTTCGGGGGACAGAGTTTTGCTCTTGTTG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:7:107924097:GATAT>G",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TATTTTCTTTCTAAATCTGTGGGGAGATATATATATATAAAGTCTGAGCAATTTA",
+   "mut_seq": "TATTTTCTTTCTAAATCTGTGGGGAGATATATATAAAGTCTGAGCAATTTA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:6:152301860:G>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "AGAGCAAAGCCGCGGGGACCCACTGGATCCTTACCATGACCACAGAGGGGT",
+   "mut_seq": "AGAGCAAAGCCGCGGGGACCCACTGAATCCTTACCATGACCACAGAGGGGT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:3:128902803:G>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CAGAGGGTCTCCTCAGCCTGCCCCTGAGGTTTGTTGTCTTCCGCATTCCTC",
+   "mut_seq": "CAGAGGGTCTCCTCAGCCTGCCCCTCAGGTTTGTTGTCTTCCGCATTCCTC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:168969116:T>TA",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "GAAGCCTCTTCTATTTGCGCAGGGTTAAAAAAAAAAAAAAAGGGGGGGATG",
+   "mut_seq": "GAAGCCTCTTCTATTTGCGCAGGGTTAAAAAAAAAAAAAAAAGGGGGGGATG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:10:54020432:G>T",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CATCTTTGGCCTGTAATAAGCAGAAGAATAGTTTTATTAGTGACGTTACCA",
+   "mut_seq": "CATCTTTGGCCTGTAATAAGCAGAATAATAGTTTTATTAGTGACGTTACCA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:9:136516102:C>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "ACAGATGCCCAGTGAAGCCTGGGGCCGGGGAGGGGAGGGGAGGGAGTCATG",
+   "mut_seq": "ACAGATGCCCAGTGAAGCCTGGGGCAGGGGAGGGGAGGGGAGGGAGTCATG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:15402315:A>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TTTTTGCTGCAGCTACAGAAAATAAAGTATGTTGTACTAAATGTCAACAGA",
+   "mut_seq": "TTTTTGCTGCAGCTACAGAAAATAACGTATGTTGTACTAAATGTCAACAGA",
+   "S_raw": 5.0,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:1:147252348:A>G",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "GTGAGTCTCAGGCAGTATAGAGGCCAGATCCCAAGTTGACTTTCTCATTTA",
+   "mut_seq": "GTGAGTCTCAGGCAGTATAGAGGCCGGATCCCAAGTTGACTTTCTCATTTA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:47818760:C>G",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TCCTAACTCCCTCCCAAAAGATAGCCAAATATGAAAACATTTACCTTATCT",
+   "mut_seq": "TCCTAACTCCCTCCCAAAAGATAGCGAAATATGAAAACATTTACCTTATCT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:178804545:A>G",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "AAAAAAACAAAAGTGTGAATGTGTGAGCTTACCACTAATGTGAGCCTCAAA",
+   "mut_seq": "AAAAAAACAAAAGTGTGAATGTGTGGGCTTACCACTAATGTGAGCCTCAAA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:205743199:G>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CCTCTTGTATCTTCCTCTCCTCTCTGCAGATGCTCCCTGCTCCAACATGCT",
+   "mut_seq": "CCTCTTGTATCTTCCTCTCCTCTCTACAGATGCTCCCTGCTCCAACATGCT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:8:36911135:C>T",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TCAGTGTCAGGTGAGAACAGCACCCCTGAAAAGAAGAAACTAGGACGTATG",
+   "mut_seq": "TCAGTGTCAGGTGAGAACAGCACCCTTGAAAAGAAGAAACTAGGACGTATG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:11:119301957:T>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "ATTGTAATTTTTCTTTATCTGCAGATATTGCCTGTAGTCTAAAGATCTCTT",
+   "mut_seq": "ATTGTAATTTTTCTTTATCTGCAGACATTGCCTGTAGTCTAAAGATCTCTT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:1:193212367:A>T",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TATAATTTCTAATAATATATTTTCTACCTGTAAATTTTGTCTTTATAGGAT",
+   "mut_seq": "TATAATTTCTAATAATATATTTTCTTCCTGTAAATTTTGTCTTTATAGGAT",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "dev:7:80217497:T>G",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "AAAAGATTGTGGTCTCTTTTAAGTTTTGCAGTTCATGGTAAAATGCATTTT",
+   "mut_seq": "AAAAGATTGTGGTCTCTTTTAAGTTGTGCAGTTCATGGTAAAATGCATTTT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:7:56021066:T>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CATTTCATAAAGTGAATAAATGCTATCCCTACATTTCTGACACCGCGTCCT",
+   "mut_seq": "CATTTCATAAAGTGAATAAATGCTACCCCTACATTTCTGACACCGCGTCCT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:11:119206626:T>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CTCATGGACAAGGTGAAAGGCCGGCTGAGCGCCCGCTGTTGCAGGGTGGGC",
+   "mut_seq": "CTCATGGACAAGGTGAAAGGCCGGCCGAGCGCCCGCTGTTGCAGGGTGGGC",
+   "S_raw": 3.57,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:9:96298476:G>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CTCCAGTGATCACTGTGAAAAGCAAGAATGCTTTTAAAAGACAGAATTCAT",
+   "mut_seq": "CTCCAGTGATCACTGTGAAAAGCAAAAATGCTTTTAAAAGACAGAATTCAT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:10:99818560:C>T",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TGTCACAGGGTGACAAGCAACAAAACTATTAAATAAGTAAATTATCTGATA",
+   "mut_seq": "TGTCACAGGGTGACAAGCAACAAAATTATTAAATAAGTAAATTATCTGATA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:4:56467815:G>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "GATGCGGCCTGTTTCCGGCGCGCGAGACCACCTCGCGCGGGAGGCACGGGA",
+   "mut_seq": "GATGCGGCCTGTTTCCGGCGCGCGAAACCACCTCGCGCGGGAGGCACGGGA",
+   "S_raw": 4.07,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:11:17397983:C>T",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "CTGGAGCCCCAGGAGCCAACATGTCCCACAAGCTCATGCTCCCCTACCCCC",
+   "mut_seq": "CTGGAGCCCCAGGAGCCAACATGTCTCACAAGCTCATGCTCCCCTACCCCC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "AID/SHM Passenger"
+  },
+  {
+   "id": "dev:1:12012599:C>T",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TTAAGAGACATGTTTCCACCCCACCCCCAACCTTGTCCCAAGTGCCCTGGA",
+   "mut_seq": "TTAAGAGACATGTTTCCACCCCACCTCCAACCTTGTCCCAAGTGCCCTGGA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:70777524:ATTCC>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "AGATACTACTTTTTTACCCATTAAGATTCCTTCTTTTAATAGAGCTCATTGCTAA",
+   "mut_seq": "AGATACTACTTTTTTACCCATTAAGATTCTTTTAATAGAGCTCATTGCTAA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:10:104061536:A>G",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TTCCAGGTGACTCAGGAGAAGCCTGATCAGCCCTGGCAGAGAGGTACCCCC",
+   "mut_seq": "TTCCAGGTGACTCAGGAGAAGCCTGGTCAGCCCTGGCAGAGAGGTACCCCC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:4:152346914:T>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "ATTAAGTGAGGCATTTCAAGTACTATGTTTAGATATGTCACCTGAAACATT",
+   "mut_seq": "ATTAAGTGAGGCATTTCAAGTACTACGTTTAGATATGTCACCTGAAACATT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:6:56954595:G>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "GAAAGCCGCGGCGATCATGGTGCGGGCGAGGCGAGGGCGACTCGACGGCGG",
+   "mut_seq": "GAAAGCCGCGGCGATCATGGTGCGGACGAGGCGAGGGCGACTCGACGGCGG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:55643139:G>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TAAAGAAAGGAAAATGCTCAGCATAGTATATTACTTGATATTACCTGATTT",
+   "mut_seq": "TAAAGAAAGGAAAATGCTCAGCATAATATATTACTTGATATTACCTGATTT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:5:90619195:TTGA>T",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TCATTTAATATGGTATGGACACAATTTGATGATAATTGTGGTTGCTAGATAATA",
+   "mut_seq": "TCATTTAATATGGTATGGACACAATTTGATAATTGTGGTTGCTAGATAATA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:8:99467406:T>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TGCTTCCCTATTCCCTTTTATCCCCTATATCAGGTGATGCTTTTCCTTGGA",
+   "mut_seq": "TGCTTCCCTATTCCCTTTTATCCCCCATATCAGGTGATGCTTTTCCTTGGA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:2:199328925:G>GA",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "GACAACAATCCCTGATTAAATGGGGGAAAAAAACAGACCAAGTCACATTTG",
+   "mut_seq": "GACAACAATCCCTGATTAAATGGGGGAAAAAAAACAGACCAAGTCACATTTG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:9:20933002:A>T",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "TTAAATAATTCATTGTTTCCCCTTGATCTTTAACCAGTGATATATCTGGCC",
+   "mut_seq": "TTAAATAATTCATTGTTTCCCCTTGTTCTTTAACCAGTGATATATCTGGCC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:1:3815689:AT>A",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "AGTAGGGTCTACTCTTCAGCTTCCTATTTTTTTTTTTTTTGTTGAGACAGAG",
+   "mut_seq": "AGTAGGGTCTACTCTTCAGCTTCCTATTTTTTTTTTTTTGTTGAGACAGAG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "dev:4:122934092:T>C",
+   "set": "dev",
+   "label": 0,
+   "wt_seq": "AACATGTATATTTAATATACTGTTTTCTAGATGGCAAGATTGTTTTACCAG",
+   "mut_seq": "AACATGTATATTTAATATACTGTTTCCTAGATGGCAAGATTGTTTTACCAG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:22:29654655:A>G",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "CGCCTGCTCTCCCTTTCTTCTTTCCAGTATGGTGACTACGACCCCAGTGTT",
+   "mut_seq": "CGCCTGCTCTCCCTTTCTTCTTTCCGGTATGGTGACTACGACCCCAGTGTT",
+   "S_raw": 4.61,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "blind:19:1496458:G>A",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "CGGCCGGAATAACCAGGAACGGTGGGTGCTCGCAGGCGCCTGGCTGCCTCA",
+   "mut_seq": "CGGCCGGAATAACCAGGAACGGTGGATGCTCGCAGGCGCCTGGCTGCCTCA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:17:61961787:G>C",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "GTACTGACAAGGAATAATCTAAGAAGTATAGGCAAATATTACAAATGTTAA",
+   "mut_seq": "GTACTGACAAGGAATAATCTAAGAACTATAGGCAAATATTACAAATGTTAA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:17:75960368:GCACAAAAC>T",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "TCCAGAGGCTCAGGCCGCCCTCGGTGCACAAAACTTCGAGGAAATATCAAGGATGGGCA",
+   "mut_seq": "TCCAGAGGCTCAGGCCGCCCTCGGTTTTCGAGGAAATATCAAGGATGGGCA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:14:74486324:C>T",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "GAATTTGAGTTAAGAGCCACTTTTACGCACTGCTGGTGAAGGTGACATTGA",
+   "mut_seq": "GAATTTGAGTTAAGAGCCACTTTTATGCACTGCTGGTGAAGGTGACATTGA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:15:52135762:C>T",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "TCGCCGCTCGCTGTCAGGATCTGCCCGCAGAAAAGGACAGGAAGTGGGTGG",
+   "mut_seq": "TCGCCGCTCGCTGTCAGGATCTGCCTGCAGAAAAGGACAGGAAGTGGGTGG",
+   "S_raw": 5.85,
+   "call": 1,
+   "classification": "Driver Variant"
+  },
+  {
+   "id": "blind:17:43049195:C>T",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "AGCTGTACCATCCATTCCAGTTGATCTAAAATGGACATTTAGATGTAAAAT",
+   "mut_seq": "AGCTGTACCATCCATTCCAGTTGATTTAAAATGGACATTTAGATGTAAAAT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:21:33288262:GT>G",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "TTCTCTTCCACAGCACCTGAAAGAGGTAGGTAGGATGGAGTGAGATGTGGAT",
+   "mut_seq": "TTCTCTTCCACAGCACCTGAAAGAGGAGGTAGGATGGAGTGAGATGTGGAT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:17:7674975:AGAGCAATCAGT>A",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "AGATGCTGAGGAGGGGCCAGACCTAAGAGCAATCAGTGAGGAATCAGAGGCCTGGGGACCCT",
+   "mut_seq": "AGATGCTGAGGAGGGGCCAGACCTAAGAGGAATCAGAGGCCTGGGGACCCT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:20:508450:C>A",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "ATAATGAAGTCAACAAAAACAATTACCCCCATTCCACCACATGTGACTCGT",
+   "mut_seq": "ATAATGAAGTCAACAAAAACAATTAACCCCATTCCACCACATGTGACTCGT",
+   "S_raw": 3.11,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "blind:17:31248973:T>G",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "CAAAAGTGTTAGGATTTTATTTTTATTTTTTTGTAGGTTAGAACCATCAGA",
+   "mut_seq": "CAAAAGTGTTAGGATTTTATTTTTAGTTTTTTGTAGGTTAGAACCATCAGA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:16:2106679:T>C",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "GCTGAACGTACGTGCAGCCCACCGCTGCAGGCAGAAGGGGTGGTGAGGGGG",
+   "mut_seq": "GCTGAACGTACGTGCAGCCCACCGCCGCAGGCAGAAGGGGTGGTGAGGGGG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:17:43076487:C>A",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "AGCATCTTTACATTGATGTTTCTTACCTTTCCACTCCTGGTTCTTTATTTT",
+   "mut_seq": "AGCATCTTTACATTGATGTTTCTTAACTTTCCACTCCTGGTTCTTTATTTT",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "blind:19:12891400:G>T",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "TCTCGTCGGCGGCGCAGACCGGTCAGTGTGGGGTCGGGAGTGTGGAGGGAA",
+   "mut_seq": "TCTCGTCGGCGGCGCAGACCGGTCATTGTGGGGTCGGGAGTGTGGAGGGAA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:17:31336918:A>C",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "TGTTCACAGCTTCATTTTAGTGGTAAGTTCTAGGAAAGGAATTTGTGTTTA",
+   "mut_seq": "TGTTCACAGCTTCATTTTAGTGGTACGTTCTAGGAAAGGAATTTGTGTTTA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:14:21326174:G>A",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "CTTGCAAAAAATGAATCTATCAAAGGTGGGAGTTCGAGGTTATTACATCTT",
+   "mut_seq": "CTTGCAAAAAATGAATCTATCAAAGATGGGAGTTCGAGGTTATTACATCTT",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "blind:20:2862936:T>C",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "CGGGATCCCGCTCACCTATAGCCAGTATCCCTGTGCACGCCAGAAGGGTAC",
+   "mut_seq": "CGGGATCCCGCTCACCTATAGCCAGCATCCCTGTGCACGCCAGAAGGGTAC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:17:31357245:GTTTAC>TTTTAG",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "CAGCCACAAAGTAAAAATGTTGTGTGTTTACTTTTTTGCATCTTGGCAGGCTACAC",
+   "mut_seq": "CAGCCACAAAGTAAAAATGTTGTGTTTTTAGTTTTTTGCATCTTGGCAGGCTACAC",
+   "S_raw": 8.13,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "blind:13:39699477:A>G",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "GTTTTGTTTCAGTTTCTGTTTTGCAACCTGAAATATTCTTTGCTTTTAGTG",
+   "mut_seq": "GTTTTGTTTCAGTTTCTGTTTTGCAGCCTGAAATATTCTTTGCTTTTAGTG",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Driver Variant"
+  },
+  {
+   "id": "blind:19:11102662:A>G",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "GACAGTTCAATCCTGTCTCTTCTGTAGTGTCTGTCACCTGCAAATCCGGGG",
+   "mut_seq": "GACAGTTCAATCCTGTCTCTTCTGTGGTGTCTGTCACCTGCAAATCCGGGG",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "blind:21:31668461:T>G",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "ACAGCCCAAAGTTATCTTCTTAAAATTTTTTACAGGTCCATGAAAAAGCAG",
+   "mut_seq": "ACAGCCCAAAGTTATCTTCTTAAAAGTTTTTACAGGTCCATGAAAAAGCAG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:17:43051061:A>C",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "AACTCTGGGGTTCTCCCAGGCTCTTACCTGTGGGCATGTTGGTGAAGGGCC",
+   "mut_seq": "AACTCTGGGGTTCTCCCAGGCTCTTCCCTGTGGGCATGTTGGTGAAGGGCC",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "blind:12:43768273:G>A",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "ATAGATACAATCAGTTTCACATAAGGTAACAGATAAAATTCTTTGTATTTT",
+   "mut_seq": "ATAGATACAATCAGTTTCACATAAGATAACAGATAAAATTCTTTGTATTTT",
+   "S_raw": 6.08,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "blind:15:89323809:GC>CT",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "CCTAGAGAACCCAAGCCGGCGCACTGCTCACCAGAGCTAGGGGTTGACCTGG",
+   "mut_seq": "CCTAGAGAACCCAAGCCGGCGCACTCTTCACCAGAGCTAGGGGTTGACCTGG",
+   "S_raw": 3.17,
+   "call": 1,
+   "classification": "Loss-of-Function Variant"
+  },
+  {
+   "id": "blind:16:2088143:A>C",
+   "set": "blind",
+   "label": 1,
+   "wt_seq": "CCAGATGGCCCTGCACGCAAATGTGAGTGGGGGTGGGTCCAGGCGTGAGCT",
+   "mut_seq": "CCAGATGGCCCTGCACGCAAATGTGCGTGGGGGTGGGTCCAGGCGTGAGCT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:15:48208196:C>G",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "CCTTATTCATAACTTCAGATAATTTCCTTCTCTTTCATTACACTATGAATG",
+   "mut_seq": "CCTTATTCATAACTTCAGATAATTTGCTTCTCTTTCATTACACTATGAATG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:13:23411959:C>T",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "ACCAACAAACGCACATGTGCAGCTACAGAAATTAAAAGTACATCGGCCGGG",
+   "mut_seq": "ACCAACAAACGCACATGTGCAGCTATAGAAATTAAAAGTACATCGGCCGGG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:17:31342681:G>GA",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "CAGCCCAGTAGCGGGAGCTAATATTGATTCTAGTGCCCTTTGGATGCTAGG",
+   "mut_seq": "CAGCCCAGTAGCGGGAGCTAATATTGAATTCTAGTGCCCTTTGGATGCTAGG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "AID/SHM Passenger"
+  },
+  {
+   "id": "blind:15:26560925:A>G",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "ACCAGGTGGGGTCAAGGTGGTGGAGAGCCTACCCGGTTGCTTTCGCTCTTT",
+   "mut_seq": "ACCAGGTGGGGTCAAGGTGGTGGAGGGCCTACCCGGTTGCTTTCGCTCTTT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:19:7637206:C>A",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "GGGAAAGTGAGTGCCTCTCCGGGGCCGGGCTCTGGCGTCCGGTGTGGGACG",
+   "mut_seq": "GGGAAAGTGAGTGCCTCTCCGGGGCAGGGCTCTGGCGTCCGGTGTGGGACG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:15:26621295:C>T",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "TGCACCATGCAACAGCAAAATTGGTCCTGAAGAGGCACACAGACCTGAGCC",
+   "mut_seq": "TGCACCATGCAACAGCAAAATTGGTTCTGAAGAGGCACACAGACCTGAGCC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:13:32326166:A>T",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "GATAAGTCAGGTATGATTAAAAACAATGCTTTTTATTCTTAGAATACTAGA",
+   "mut_seq": "GATAAGTCAGGTATGATTAAAAACATTGCTTTTTATTCTTAGAATACTAGA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:15:72729612:C>T",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "TAAATTGTCTTGTTTGCTTTTTTTCCAAGCTCGGCATTTACCAGAAGGCAT",
+   "mut_seq": "TAAATTGTCTTGTTTGCTTTTTTTCTAAGCTCGGCATTTACCAGAAGGCAT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "AID/SHM Passenger"
+  },
+  {
+   "id": "blind:20:50945724:A>G",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "CAGTCATATTTCTTTCAAATATTAGAAATAGTACCTACCTAATAAATTCAG",
+   "mut_seq": "CAGTCATATTTCTTTCAAATATTAGGAATAGTACCTACCTAATAAATTCAG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:14:102465430:T>A",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "AGCCATGCCCCCAGGGTCTACACACTCTCGTTCATCAACATCACAACTGGA",
+   "mut_seq": "AGCCATGCCCCCAGGGTCTACACACACTCGTTCATCAACATCACAACTGGA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:17:31336620:CCTG>C",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "TGTTTTTTTTTTTAAAAAAAAAAATCCTGCTTCTTTACAGGTTATTGGAAGGAT",
+   "mut_seq": "TGTTTTTTTTTTTAAAAAAAAAAATCCTTCTTTACAGGTTATTGGAAGGAT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:12:88080413:A>ATG",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "CTTGAAGCCTGATGTAAATAAACATATGTGTGTGTGTGTTTTTTAATTTTT",
+   "mut_seq": "CTTGAAGCCTGATGTAAATAAACATATGTGTGTGTGTGTGTTTTTTAATTTTT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:12:12138539:G>A",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "CTAATACTATCCGGTTAGCACCTTGGAAAAGGAGAAAATTCAACAGAAATG",
+   "mut_seq": "CTAATACTATCCGGTTAGCACCTTGAAAAAGGAGAAAATTCAACAGAAATG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:15:89274318:C>G",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "AGTGAAGAATAGGTAAGTTGGTGAACCATATCTCAAAAGGTTTATAAGGTG",
+   "mut_seq": "AGTGAAGAATAGGTAAGTTGGTGAAGCATATCTCAAAAGGTTTATAAGGTG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:14:87934888:A>G",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "CAGAGGTGAAATGACCCTAGAGTAGAAAGAAACACATTCCTTGAAACCATA",
+   "mut_seq": "CAGAGGTGAAATGACCCTAGAGTAGGAAGAAACACATTCCTTGAAACCATA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:12:109798595:C>T",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "GGTACGAGTAGGTGGATCAGCTGTGCCCCCAGCCGCACACTCACCCCAATC",
+   "mut_seq": "GGTACGAGTAGGTGGATCAGCTGTGTCCCCAGCCGCACACTCACCCCAATC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:14:50174570:A>G",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "GCAATGGACTGCAAAGCAAAAAGATATCACAGTATGTATGTCTCTGACATC",
+   "mut_seq": "GCAATGGACTGCAAAGCAAAAAGATGTCACAGTATGTATGTCTCTGACATC",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:17:78552512:CT>C",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "TCCGTTTCTAAGTGACACAGATGGGCTTTTTTTTTTTTTTTTTGCCTGGGCA",
+   "mut_seq": "TCCGTTTCTAAGTGACACAGATGGGCTTTTTTTTTTTTTTTTGCCTGGGCA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:18:10715229:G>A",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "TAAACCATATATTTTGTTATTCTGCGTATGTCCTACTTTTTATTATAAAAA",
+   "mut_seq": "TAAACCATATATTTTGTTATTCTGCATATGTCCTACTTTTTATTATAAAAA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:20:58450025:G>A",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "CCAGGCTTAGTGCTAACAAGATTGCGGGGCTTTTTAGGGTTTAAGAAGATG",
+   "mut_seq": "CCAGGCTTAGTGCTAACAAGATTGCAGGGCTTTTTAGGGTTTAAGAAGATG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:12:47979696:T>G",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "AGGGACTGCAAAGCAGCAAGGGGGATCCAGGGAGGGAGAAAGGGCCCCCGG",
+   "mut_seq": "AGGGACTGCAAAGCAGCAAGGGGGAGCCAGGGAGGGAGAAAGGGCCCCCGG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:17:43063960:T>A",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "ACACACAAACTCAGCATCTGCAGAATGAAAAACACTCAAAGGATTAGAAGT",
+   "mut_seq": "ACACACAAACTCAGCATCTGCAGAAAGAAAAACACTCAAAGGATTAGAAGT",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:17:80343838:C>T",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "GCCATCGTGTCGTGTGTTTACACCTCGTGCGATTCTGTTCTTAGGTGCAGA",
+   "mut_seq": "GCCATCGTGTCGTGTGTTTACACCTTGTGCGATTCTGTTCTTAGGTGCAGA",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:15:78149443:A>G",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "GTGGATCTCTAAGGTGAGCGCTGGCAGGCCGGCGTGTGGCAGGCAGGCAGG",
+   "mut_seq": "GTGGATCTCTAAGGTGAGCGCTGGCGGGCCGGCGTGTGGCAGGCAGGCAGG",
+   "S_raw": 0.0,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  },
+  {
+   "id": "blind:18:2922213:C>A",
+   "set": "blind",
+   "label": 0,
+   "wt_seq": "TTGTAGCCATTCCTGAAAGAAAACACACCCTGTTAGCCCACATGTTCTGGC",
+   "mut_seq": "TTGTAGCCATTCCTGAAAGAAAACAAACCCTGTTAGCCCACATGTTCTGGC",
+   "S_raw": 3.44,
+   "call": 0,
+   "classification": "Benign Polymorphism"
+  }
+ ]
+}

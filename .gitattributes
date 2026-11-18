@@ -1,0 +1,2 @@
+# keep the golden file byte-identical so its SHA-256 matches in CI
+tests/golden/* -text

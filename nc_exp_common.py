@@ -33,9 +33,13 @@ def log(msg: str) -> None:
 
 
 def open_text(path):
+    """Open plain or gzip/bgzip text (.gz, .bgz or anything else) by checking the file's magic bytes."""
     path = str(path)
-    return gzip.open(path, "rt", encoding="utf-8", errors="replace") if path.endswith(".gz") \
-        else open(path, "rt", encoding="utf-8", errors="replace", newline="")
+    with open(path, "rb") as fh:
+        magic = fh.read(2)
+    if magic == b"\x1f\x8b":
+        return gzip.open(path, "rt", encoding="utf-8", errors="replace", newline="")
+    return open(path, "rt", encoding="utf-8", errors="replace", newline="")
 
 
 def resolve_file(path, suffixes):
@@ -158,7 +162,7 @@ def load_pool(path, chroms=None, max_len=None):
     path = str(path)
     rows = []
     low = path.lower()
-    if low.endswith((".vcf", ".vcf.gz")):
+    if low.endswith((".vcf", ".vcf.gz", ".vcf.bgz")):
         with open_text(path) as fh:
             for line in fh:
                 if line.startswith("#"):
