@@ -923,6 +923,7 @@ td.td-name { font-family: var(--sans); font-weight: 700; color: var(--ink); }
       
       <div class="seq-foot">
         <span>Length: <strong id="seq-len">51</strong> bp</span>
+        <span id="mode-hint" style="font-size:11px;opacity:.8"></span>
         <button type="button" onclick="clearSequence()">Clear Input</button>
       </div>
 
@@ -2052,6 +2053,13 @@ function clearSequence() {
 }
 
 document.getElementById('fasta-input').addEventListener('input', updateSeqLen);
+(function () {
+  const ta = document.getElementById('fasta-input'), hint = document.getElementById('mode-hint');
+  if (!ta || !hint) return;
+  const upd = () => { hint.textContent = HAS_REF_ALT(ta.value) ? 'Mode: delta (REF>ALT found)' : 'Mode: absolute score (add REF>ALT to header for delta)'; };
+  ta.addEventListener('input', upd); upd();
+  window.addEventListener('load', upd);
+})();
 
 /* ==========================================================================
    6. ANALYSIS PIPELINE + REPORT RENDERER
@@ -2202,7 +2210,13 @@ function renderReport(data) {
 }
 
 /* ---- v3.3 server call (authoritative). Falls back to the in-page v3.1 engine only if the server is unreachable. ---- */
-const API_ANALYZE = '/api/analyze';
+/* If this page is NOT served by the Render service itself (file://, GitHub Pages, Netlify...), paste the service
+   address here, e.g. 'https://your-service.onrender.com' (no trailing slash). Leave '' when Render serves this page.
+   You can also test without editing: open the page with ?api=https://your-service.onrender.com */
+const API_BASE = (new URLSearchParams(location.search).get('api') || window.NCMUTSCAN_API_BASE || '').replace(/\/+$/, '');
+const API_ANALYZE = API_BASE + '/api/analyze';
+const API_VERSION = API_BASE + '/version';
+const HAS_REF_ALT = h => /^\s*>.*[ACGT]\s*>\s*[ACGT]/im.test(h || '');
 const API_TIMEOUT_MS = 60000;           /* Render free tier can take ~30-50 s to wake up */
 let analysisSeq = 0;
 
@@ -2268,6 +2282,17 @@ function showEngineBanner(data, err) {
     b.style.background = 'rgba(245,158,11,.15)'; b.style.border = '1px solid #f59e0b';
     b.textContent = `Computed by the server (build ${data.build_sha256 || 'unknown'}) but the build is NOT verified against the pinned v3.3 core.`;
   }
+  /* scoring-mode note (additive): delta (REF>ALT) vs absolute motif score */
+  if (!err) {
+    const mode = (data.server_raw && data.server_raw.analysis_mode) ||
+      (HAS_REF_ALT(document.getElementById('fasta-input').value) ? 'delta' : 'absolute');
+    const note = document.createElement('div');
+    note.style.cssText = 'margin-top:4px;font-weight:600;';
+    note.textContent = mode === 'delta'
+      ? 'Scoring mode: delta (wildtype vs mutant, from REF>ALT in the header).'
+      : 'Scoring mode: absolute motif score on the pasted sequence. No REF>ALT in the header, so no wildtype comparison was made. Add e.g. ">chr5:1295113|TERT_promoter|-124C>T" for a delta score.';
+    b.appendChild(note);
+  }
 }
 
 async function runAnalysis() {
@@ -2296,7 +2321,7 @@ async function runAnalysis() {
 (function () {
   const el = document.getElementById('build-line');
   if (!el || !window.fetch) return;
-  fetch('/version', { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(v => {
+  fetch(API_VERSION, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(v => {
     if (!v) return;
     el.textContent = `· ${v.git_tag || ''} · build ${v.core_short_sha256 || '?'} · ${v.build_verified ? 'verified' : 'NOT verified'}`;
   }).catch(() => {});

@@ -41,6 +41,15 @@ except Exception:
     sv_engine = None
 
 
+def version_info():
+    return {
+        "git_tag": os.environ.get("GIT_TAG") or (os.environ.get("RENDER_GIT_COMMIT") or "")[:7] or "unknown",
+        "core_short_sha256": CORE_SHORT_SHA256,
+        "build_verified": CORE_SHORT_SHA256 == EXPECTED_BUILD_PREFIX,
+        "version": "NC-MutScan v3.3",
+    }
+
+
 def parse_single_fasta_to_pair(fasta_text):
     lines = [ln.strip() for ln in str(fasta_text or "").strip().splitlines() if ln.strip()]
     header = ""
@@ -128,6 +137,7 @@ def run_v33_prediction(payload):
                 "S_raw": s_raw,
                 "S_unified": s_unified,
                 "is_driver": is_driver,
+                "analysis_mode": "absolute",
             }
 
     if not wt_seq or not mut_seq:
@@ -158,6 +168,7 @@ def run_v33_prediction(payload):
         "S_raw": s_raw,
         "S_unified": s_unified,
         "is_driver": is_driver,
+        "analysis_mode": "delta",
     }
 
 
@@ -187,6 +198,11 @@ class NCMutScanRequestHandler(http.server.SimpleHTTPRequestHandler):
                 "endpoints": ["/health", "/predict", "/api/analyze"],
             }
             self.wfile.write(json.dumps(resp, indent=2).encode("utf-8"))
+            return
+
+        if path in ("/version", "/api/version"):
+            self._set_headers(200)
+            self.wfile.write(json.dumps(version_info()).encode("utf-8"))
             return
 
         if path == "/index.html":
@@ -287,6 +303,9 @@ def app(environ, start_response):
                 "endpoints": ["/health", "/predict", "/api/analyze"],
             }
             return _wsgi_response(start_response, "200 OK", json.dumps(resp, indent=2).encode("utf-8"))
+
+        if path in ("/version", "/api/version"):
+            return _wsgi_response(start_response, "200 OK", json.dumps(version_info()).encode("utf-8"))
 
         if path == "/index.html":
             index_file = os.path.join(BASE_DIR, "index.html")
