@@ -1,5 +1,5 @@
 {
-  "base_url": "http://127.0.0.1:8001",
+  "base_url": "https://noncoding-mutation-server-1.onrender.com",
   "checks": {
     "health 200": {
       "ok": true,
